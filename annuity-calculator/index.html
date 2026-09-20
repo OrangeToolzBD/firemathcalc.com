@@ -24,13 +24,12 @@
 <script src="/assets/calc-core.js" defer></script>
 </head>
 <body>
-<header class="site"><div class="wrap"><a class="logo" href="/"><img src="/assets/logo.png" alt="Fire Math Calc" width="44" height="34"></a><nav class="site"><a href="/compound-interest-calculator/">Compound Interest</a><a href="/inflation-calculator/">Inflation</a><a href="/investment-calculator/">Investment</a><a href="/retirement-calculator/">Retirement</a><a href="/#guides">Guides</a></nav></div></header>
+<header class="site"><div class="wrap"><a class="logo" href="/"><img src="/assets/logo.png" alt="Fire Math Calc" width="44" height="34"></a><button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav"><span></span></button><nav class="site" id="site-nav"><a href="/compound-interest-calculator/">Compound Interest</a><a href="/inflation-calculator/">Inflation</a><a href="/investment-calculator/">Investment</a><a href="/retirement-calculator/">Retirement</a><a href="/#guides">Guides</a></nav></div></header>
 <main><div class="wrap">
 <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Fire Math Calc</a> › Annuity Calculator</nav>
 <h1>Annuity Calculator</h1>
-<p class="answer">This <strong>annuity calculator</strong> works out the fixed payment a lump sum can provide over a set number of years at the rate you enter. At 5% a year, $300,000 pays about $1,979.87 a month for 20 years, or $475,168 in total. It can also show what regular payments grow to. Contract quotes from insurers will differ.</p>
-<p class="updated">Updated <time datetime="2026-09-20">September 20, 2026</time> · By <a href="/about/">Fire Math Calc</a></p>
 <div id="calculator" data-calc="annuity"><noscript>This tool needs JavaScript turned on.</noscript></div>
+<div class="answer-panel"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.6c.6.5 1 1.2 1 2.4h6c0-1.2.4-1.9 1-2.4A7 7 0 0 0 12 2z"/></svg></span><div><p class="answer">This <strong>annuity calculator</strong> works out the fixed payment a lump sum can provide over a set number of years at the rate you enter. At 5% a year, $300,000 pays about $1,979.87 a month for 20 years, or $475,168 in total. It can also show what regular payments grow to. Contract quotes from insurers will differ.</p><p class="updated">Updated <time datetime="2026-09-20">September 20, 2026</time> · By <a href="/about/">Fire Math Calc</a></p></div></div>
 <div class="ad-slot"><!-- Ad slot 1 (below the tool). Empty until the ad network is approved; reserve its height in CSS first. --></div>
 <h2>How much does an annuity pay per month?</h2>
 <p>For a fixed-period payout, the monthly payment depends on the lump sum, the rate and the number of years. At an assumed 5% yearly rate, each $100,000 pays about $659.96 a month over 20 years, or $536.82 over 30 years. The longer the period, the smaller each payment, because the money must stretch further.</p><div class="table-wrap"><table class="data"><thead><tr><th>Lump sum</th><th>20 years at 5%</th><th>30 years at 5%</th></tr></thead><tbody><tr><td>$100,000</td><td>$659.96/month</td><td>$536.82/month</td></tr><tr><td>$300,000</td><td>$1,979.87/month</td><td>$1,610.46/month</td></tr><tr><td>$400,000</td><td>$2,639.82/month</td><td>$2,147.29/month</td></tr><tr><td>$2,000,000</td><td>$13,199.11/month</td><td>$10,736.43/month</td></tr></tbody></table></div><p>The rate matters too. $300,000 over 20 years pays about $1,663.79 a month at 3%, and $1,250 a month with no interest at all.</p><p>These are the results of the math, not insurance quotes. A real annuity contract sets its own payment, based on the insurer’s pricing, fees and, for lifetime income, your age. Use the calculator to understand the mechanics and to check whether a quote looks reasonable, then read the contract.</p><p>The calculator can also switch to “value of regular payments.” In that mode, $500 a month for 20 years at 5% grows to about $205,517, from $120,000 paid in.</p>
@@ -50,7 +49,7 @@
 <li><a href="https://www.finra.org/investors/investing/investment-products/annuities" rel="nofollow noopener">FINRA — Annuities</a></li>
 </ul>
 <h2>Related tools</h2>
-<ul>
+<ul class="related-tools">
 <li><a href="/dividend-calculator/">Dividend Calculator</a></li>
 <li><a href="/savings-interest-calculator/">Savings Interest Calculator</a></li>
 <li><a href="/net-worth-calculator/">Net Worth Calculator</a></li>
@@ -69,5 +68,6 @@
 <div class="footer-bottom"><p>Educational calculators, not investment advice. Results depend on your assumptions; past returns do not guarantee future results.</p><p>© <span id="y"></span> Fire Math Calc</p></div>
 </div></footer>
 <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+<script src="/assets/nav.js" defer></script>
 </body>
 </html>

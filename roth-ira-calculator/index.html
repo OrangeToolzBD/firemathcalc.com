@@ -24,13 +24,12 @@
 <script src="/assets/calc-core.js" defer></script>
 </head>
 <body>
-<header class="site"><div class="wrap"><a class="logo" href="/"><img src="/assets/logo.png" alt="Fire Math Calc" width="44" height="34"></a><nav class="site"><a href="/compound-interest-calculator/">Compound Interest</a><a href="/inflation-calculator/">Inflation</a><a href="/investment-calculator/">Investment</a><a href="/retirement-calculator/">Retirement</a><a href="/#guides">Guides</a></nav></div></header>
+<header class="site"><div class="wrap"><a class="logo" href="/"><img src="/assets/logo.png" alt="Fire Math Calc" width="44" height="34"></a><button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav"><span></span></button><nav class="site" id="site-nav"><a href="/compound-interest-calculator/">Compound Interest</a><a href="/inflation-calculator/">Inflation</a><a href="/investment-calculator/">Investment</a><a href="/retirement-calculator/">Retirement</a><a href="/#guides">Guides</a></nav></div></header>
 <main><div class="wrap">
 <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Fire Math Calc</a> › Roth IRA Calculator</nav>
 <h1>Roth IRA Calculator</h1>
-<p class="answer">This <strong>Roth IRA calculator</strong> projects your tax-free balance and checks your 2026 limit. The IRS cap is <a href="https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500" rel="nofollow noopener">$7,500, plus $1,100 at 50 or older</a> (IR-2025-111, November 13, 2025). Starting at 30 with $10,000 and adding $7,500 a year at an assumed 6% return, you would have about $912,622 by 65.</p>
-<p class="updated">Updated <time datetime="2026-09-20">September 20, 2026</time> · By <a href="/about/">Fire Math Calc</a></p>
 <div id="calculator" data-calc="rothIra"><noscript>This tool needs JavaScript turned on.</noscript></div>
+<div class="answer-panel"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.6c.6.5 1 1.2 1 2.4h6c0-1.2.4-1.9 1-2.4A7 7 0 0 0 12 2z"/></svg></span><div><p class="answer">This <strong>Roth IRA calculator</strong> projects your tax-free balance and checks your 2026 limit. The IRS cap is <a href="https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500" rel="nofollow noopener">$7,500, plus $1,100 at 50 or older</a> (IR-2025-111, November 13, 2025). Starting at 30 with $10,000 and adding $7,500 a year at an assumed 6% return, you would have about $912,622 by 65.</p><p class="updated">Updated <time datetime="2026-09-20">September 20, 2026</time> · By <a href="/about/">Fire Math Calc</a></p></div></div>
 <div class="ad-slot"><!-- Ad slot 1 (below the tool). Empty until the ad network is approved; reserve its height in CSS first. --></div>
 <h2>How much will my Roth IRA be worth?</h2>
 <p>Your future balance depends on what you have now, what you add each year, the years left and the return you assume. The calculator grows the balance by your return each year and adds your contribution at year end. It first caps that contribution at your allowed 2026 limit. Qualified withdrawals come out tax-free, so the result is the amount you would keep.</p><p>Worked example, using the defaults:</p><ul><li>Age 30, withdrawing at 65, so 35 years of growth.</li><li>$10,000 already in the account.</li><li>$7,500 a year, filing single, with $90,000 modified AGI (below the phase-out, so the full limit applies).</li><li>An assumed 6% yearly return.</li></ul><p>Result: about <strong>$912,622</strong> at 65. Of that, $272,500 is money you put in ($10,000 plus 35 × $7,500). The rest is growth.</p><p>The calculator keeps contributions at the 2026 dollar limit for every future year. The IRS adjusts limits over time, so this is a simplification. The return is your assumption and is not guaranteed.</p><p>The Roth tax benefit depends on rules the tool does not check, such as whether a withdrawal is a qualified distribution. The <a href="https://www.irs.gov/retirement-plans/roth-iras" rel="nofollow noopener">IRS Roth IRA page</a> (reviewed September 8, 2026) confirms three points: contributions are not deductible, qualified distributions are tax-free, and the original owner has no required minimum distributions. As the IRS puts it, you can leave money in the account “as long as you live.”</p>
@@ -55,7 +54,7 @@
 <li><a href="https://www.irs.gov/publications/p590a" rel="nofollow noopener">IRS — Publication 590-A, Contributions to Individual Retirement Arrangements (IRAs)</a></li>
 </ul>
 <h2>Related tools</h2>
-<ul>
+<ul class="related-tools">
 <li><a href="/401k-calculator/">401(k) Calculator</a></li>
 <li><a href="/retirement-calculator/">Retirement Calculator</a></li>
 <li><a href="/compound-interest-calculator/">Compound Interest Calculator</a></li>
@@ -74,5 +73,6 @@
 <div class="footer-bottom"><p>Educational calculators, not investment advice. Results depend on your assumptions; past returns do not guarantee future results.</p><p>© <span id="y"></span> Fire Math Calc</p></div>
 </div></footer>
 <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+<script src="/assets/nav.js" defer></script>
 </body>
 </html>

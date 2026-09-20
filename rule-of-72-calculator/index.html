@@ -24,13 +24,12 @@
 <script src="/assets/calc-core.js" defer></script>
 </head>
 <body>
-<header class="site"><div class="wrap"><a class="logo" href="/"><img src="/assets/logo.png" alt="Fire Math Calc" width="44" height="34"></a><nav class="site"><a href="/compound-interest-calculator/">Compound Interest</a><a href="/inflation-calculator/">Inflation</a><a href="/investment-calculator/">Investment</a><a href="/retirement-calculator/">Retirement</a><a href="/#guides">Guides</a></nav></div></header>
+<header class="site"><div class="wrap"><a class="logo" href="/"><img src="/assets/logo.png" alt="Fire Math Calc" width="44" height="34"></a><button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav"><span></span></button><nav class="site" id="site-nav"><a href="/compound-interest-calculator/">Compound Interest</a><a href="/inflation-calculator/">Inflation</a><a href="/investment-calculator/">Investment</a><a href="/retirement-calculator/">Retirement</a><a href="/#guides">Guides</a></nav></div></header>
 <main><div class="wrap">
 <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Fire Math Calc</a> › Rule of 72 Calculator</nav>
 <h1>Rule of 72 Calculator</h1>
-<p class="answer">This <strong>rule of 72 calculator</strong> estimates how long money takes to double: divide 72 by the yearly rate. At 8%, that gives 72 ÷ 8 = 9 years. The exact answer, ln 2 ÷ ln 1.08, is 9.01 years, so the shortcut is very close at that rate. The calculator shows both figures for any rate you enter.</p>
-<p class="updated">Updated <time datetime="2026-09-20">September 20, 2026</time> · By <a href="/about/">Fire Math Calc</a></p>
 <div id="calculator" data-calc="rule72"><noscript>This tool needs JavaScript turned on.</noscript></div>
+<div class="answer-panel"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.6c.6.5 1 1.2 1 2.4h6c0-1.2.4-1.9 1-2.4A7 7 0 0 0 12 2z"/></svg></span><div><p class="answer">This <strong>rule of 72 calculator</strong> estimates how long money takes to double: divide 72 by the yearly rate. At 8%, that gives 72 ÷ 8 = 9 years. The exact answer, ln 2 ÷ ln 1.08, is 9.01 years, so the shortcut is very close at that rate. The calculator shows both figures for any rate you enter.</p><p class="updated">Updated <time datetime="2026-09-20">September 20, 2026</time> · By <a href="/about/">Fire Math Calc</a></p></div></div>
 <div class="ad-slot"><!-- Ad slot 1 (below the tool). Empty until the ad network is approved; reserve its height in CSS first. --></div>
 <h2>What is the rule of 72?</h2>
 <p>The rule of 72 is a mental-math shortcut for compound growth: <strong>years to double ≈ 72 ÷ yearly rate (in percent)</strong>. It also works backwards. To double in a set number of years, you need a rate of about 72 ÷ years. It assumes the rate stays steady and that growth compounds once a year.</p><p>Some quick examples:</p><ul><li>At 6%, money doubles in about 72 ÷ 6 = 12 years.</li><li>At 9%, about 8 years.</li><li>To double in 10 years, you need about 7.2% a year.</li></ul><p>The number 72 is used because it divides evenly by many common rates (2, 3, 4, 6, 8, 9 and 12) and gives close answers for the rates people use most.</p><p>The exact formula is <strong>years = ln 2 ÷ ln(1 + rate)</strong>, which the calculator shows next to the estimate. For longer-range projections with deposits, use the <a href="/compound-interest-calculator/">compound interest calculator</a>. To find the rate behind a past result, use the <a href="/cagr-calculator/">CAGR calculator</a>.</p>
@@ -50,7 +49,7 @@
 <li><a href="https://download.bls.gov/pub/time.series/cu/cu.data.1.AllItems" rel="nofollow noopener">U.S. Bureau of Labor Statistics — CPI-U all items, U.S. city average, NSA (CUUR0000SA0), downloaded September 16, 2026</a></li>
 </ul>
 <h2>Related tools</h2>
-<ul>
+<ul class="related-tools">
 <li><a href="/compound-interest-calculator/">Compound Interest Calculator</a></li>
 <li><a href="/inflation-calculator/">Inflation Calculator</a></li>
 <li><a href="/investment-calculator/">Investment Calculator</a></li>
@@ -69,5 +68,6 @@
 <div class="footer-bottom"><p>Educational calculators, not investment advice. Results depend on your assumptions; past returns do not guarantee future results.</p><p>© <span id="y"></span> Fire Math Calc</p></div>
 </div></footer>
 <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+<script src="/assets/nav.js" defer></script>
 </body>
 </html>

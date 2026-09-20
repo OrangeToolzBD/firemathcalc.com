@@ -24,13 +24,12 @@
 <script src="/assets/calc-core.js" defer></script>
 </head>
 <body>
-<header class="site"><div class="wrap"><a class="logo" href="/"><img src="/assets/logo.png" alt="Fire Math Calc" width="44" height="34"></a><nav class="site"><a href="/compound-interest-calculator/">Compound Interest</a><a href="/inflation-calculator/">Inflation</a><a href="/investment-calculator/">Investment</a><a href="/retirement-calculator/">Retirement</a><a href="/#guides">Guides</a></nav></div></header>
+<header class="site"><div class="wrap"><a class="logo" href="/"><img src="/assets/logo.png" alt="Fire Math Calc" width="44" height="34"></a><button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav"><span></span></button><nav class="site" id="site-nav"><a href="/compound-interest-calculator/">Compound Interest</a><a href="/inflation-calculator/">Inflation</a><a href="/investment-calculator/">Investment</a><a href="/retirement-calculator/">Retirement</a><a href="/#guides">Guides</a></nav></div></header>
 <main><div class="wrap">
 <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Fire Math Calc</a> › Savings Interest Calculator</nav>
 <h1>Savings Interest Calculator</h1>
-<p class="answer">This <strong>high yield savings account calculator</strong> turns your bank’s APY into a balance. $5,000 plus $200 a month at 4.5% APY grows to $19,629.26 in 5 years, including $2,629.26 of interest. For comparison, the <a href="https://www.fdic.gov/national-rates-and-rate-caps" rel="nofollow noopener">FDIC national average savings rate</a> was 0.38% as of August 17, 2026.</p>
-<p class="updated">Updated <time datetime="2026-09-20">September 20, 2026</time> · By <a href="/about/">Fire Math Calc</a></p>
 <div id="calculator" data-calc="savings"><noscript>This tool needs JavaScript turned on.</noscript></div>
+<div class="answer-panel"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.6c.6.5 1 1.2 1 2.4h6c0-1.2.4-1.9 1-2.4A7 7 0 0 0 12 2z"/></svg></span><div><p class="answer">This <strong>high yield savings account calculator</strong> turns your bank’s APY into a balance. $5,000 plus $200 a month at 4.5% APY grows to $19,629.26 in 5 years, including $2,629.26 of interest. For comparison, the <a href="https://www.fdic.gov/national-rates-and-rate-caps" rel="nofollow noopener">FDIC national average savings rate</a> was 0.38% as of August 17, 2026.</p><p class="updated">Updated <time datetime="2026-09-20">September 20, 2026</time> · By <a href="/about/">Fire Math Calc</a></p></div></div>
 <div class="ad-slot"><!-- Ad slot 1 (below the tool). Empty until the ad network is approved; reserve its height in CSS first. --></div>
 <h2>How much interest will my savings earn?</h2>
 <p>Enter the APY your bank quotes, your opening deposit, your monthly deposit and the number of years. The calculator converts the APY to a monthly rate, <strong>(1 + APY)^(1/12) − 1</strong>, then compounds your balance monthly, with each deposit added at the end of its month. The result shows your balance, the interest earned and the total you deposited.</p><p>Here is the default example at two rates, both for 5 years:</p><div class="table-wrap"><table class="data"><thead><tr><th>APY</th><th>Balance after 5 years</th><th>Interest earned</th></tr></thead><tbody><tr><td>4.5% (sample high-yield rate)</td><td>$19,629.26</td><td>$2,629.26</td></tr><tr><td>0.38% (FDIC national average, August 17, 2026)</td><td>$17,208.32</td><td>$208.32</td></tr></tbody></table></div><p>In both cases you deposit $17,000 ($5,000 plus 60 × $200). The FDIC figure is a weighted average of the rates insured banks and credit unions pay, based on the $2,500 product tier.</p><p>Savings rates can change, so a 5-year projection assumes today’s rate holds the whole time. The 4.5% rate is a sample, not an offer from any bank. Enter the rate on your own account.</p><p>Interest is generally taxable, and the calculator shows it before tax. If you plan to invest rather than save, the <a href="/investment-calculator/">investment calculator</a> uses the same kind of projection with a return you assume.</p>
@@ -51,7 +50,7 @@
 <li><a href="https://www.consumerfinance.gov/ask-cfpb/what-is-the-difference-between-a-mortgage-interest-rate-and-an-apr-en-135/" rel="nofollow noopener">Consumer Financial Protection Bureau — What is the difference between a mortgage interest rate and an APR?</a></li>
 </ul>
 <h2>Related tools</h2>
-<ul>
+<ul class="related-tools">
 <li><a href="/dividend-calculator/">Dividend Calculator</a></li>
 <li><a href="/annuity-calculator/">Annuity Calculator</a></li>
 <li><a href="/net-worth-calculator/">Net Worth Calculator</a></li>
@@ -70,5 +69,6 @@
 <div class="footer-bottom"><p>Educational calculators, not investment advice. Results depend on your assumptions; past returns do not guarantee future results.</p><p>© <span id="y"></span> Fire Math Calc</p></div>
 </div></footer>
 <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+<script src="/assets/nav.js" defer></script>
 </body>
 </html>

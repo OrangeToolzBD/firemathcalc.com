@@ -24,13 +24,12 @@
 <script src="/assets/calc-core.js" defer></script>
 </head>
 <body>
-<header class="site"><div class="wrap"><a class="logo" href="/"><img src="/assets/logo.png" alt="Fire Math Calc" width="44" height="34"></a><nav class="site"><a href="/compound-interest-calculator/">Compound Interest</a><a href="/inflation-calculator/">Inflation</a><a href="/investment-calculator/">Investment</a><a href="/retirement-calculator/">Retirement</a><a href="/#guides">Guides</a></nav></div></header>
+<header class="site"><div class="wrap"><a class="logo" href="/"><img src="/assets/logo.png" alt="Fire Math Calc" width="44" height="34"></a><button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav"><span></span></button><nav class="site" id="site-nav"><a href="/compound-interest-calculator/">Compound Interest</a><a href="/inflation-calculator/">Inflation</a><a href="/investment-calculator/">Investment</a><a href="/retirement-calculator/">Retirement</a><a href="/#guides">Guides</a></nav></div></header>
 <main><div class="wrap">
 <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Fire Math Calc</a> › Inflation Calculator</nav>
 <h1>Inflation Calculator</h1>
-<p class="answer">This <strong>inflation calculator</strong> uses the official Consumer Price Index (CPI-U) from the <a href="https://download.bls.gov/pub/time.series/cu/cu.data.1.AllItems" rel="nofollow noopener">Bureau of Labor Statistics</a>, downloaded September 16, 2026. By that index, $100 in 2000 had the same buying power as about $186.96 in 2025. Prices rose 86.96% in total, an average of 2.53% a year. Pick any year from 1913 on.</p>
-<p class="updated">Updated <time datetime="2026-09-20">September 20, 2026</time> · By <a href="/about/">Fire Math Calc</a></p>
 <div id="calculator" data-calc="inflation"><noscript>This tool needs JavaScript turned on.</noscript></div>
+<div class="answer-panel"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.6c.6.5 1 1.2 1 2.4h6c0-1.2.4-1.9 1-2.4A7 7 0 0 0 12 2z"/></svg></span><div><p class="answer">This <strong>inflation calculator</strong> uses the official Consumer Price Index (CPI-U) from the <a href="https://download.bls.gov/pub/time.series/cu/cu.data.1.AllItems" rel="nofollow noopener">Bureau of Labor Statistics</a>, downloaded September 16, 2026. By that index, $100 in 2000 had the same buying power as about $186.96 in 2025. Prices rose 86.96% in total, an average of 2.53% a year. Pick any year from 1913 on.</p><p class="updated">Updated <time datetime="2026-09-20">September 20, 2026</time> · By <a href="/about/">Fire Math Calc</a></p></div></div>
 <div class="ad-slot"><!-- Ad slot 1 (below the tool). Empty until the ad network is approved; reserve its height in CSS first. --></div>
 <h2>How much is $100 from a past year worth today?</h2>
 <p>Multiply the amount by the ratio of the two years’ CPI values: <strong>value today = amount × CPI (later year) ÷ CPI (earlier year)</strong>. Using BLS annual averages, $100 from 2000 equals about $186.96 in 2025 dollars. $100 from 1970 equals about $829.75. The table below uses the same data as the calculator.</p><div class="table-wrap"><table class="data"><thead><tr><th>$100 in</th><th>CPI-U annual average</th><th>Equals in 2025 dollars</th><th>Average inflation per year</th></tr></thead><tbody><tr><td>1913</td><td>9.9</td><td>$3,251.95</td><td>3.16%</td></tr><tr><td>1950</td><td>24.1</td><td>$1,335.86</td><td>3.52%</td></tr><tr><td>1970</td><td>38.8</td><td>$829.75</td><td>3.92%</td></tr><tr><td>1980</td><td>82.4</td><td>$390.71</td><td>3.08%</td></tr><tr><td>1990</td><td>130.7</td><td>$246.32</td><td>2.61%</td></tr><tr><td>2000</td><td>172.2</td><td>$186.96</td><td>2.53%</td></tr><tr><td>2010</td><td>218.056</td><td>$147.64</td><td>2.63%</td></tr><tr><td>2020</td><td>258.811</td><td>$124.39</td><td>4.46%</td></tr></tbody></table></div><p>The 2025 annual average CPI-U is 321.943. For 2026, a full-year average does not exist yet, so the calculator uses the latest month in the data, August 2026 (334.98). On that basis, $100 in 2025 equals about $104.05 in August 2026 prices, and $100 in 2000 equals about $194.53.</p><p>The same math works in reverse. Choose a later “from” year and an earlier “to” year to see what today’s money would have been worth in the past.</p><p>The CPI measures an average basket of goods and services. Your own costs may have risen faster or slower, depending on what you buy.</p>
@@ -55,7 +54,7 @@
 <li><a href="https://www.bls.gov/news.release/cpi.nr0.htm" rel="nofollow noopener">U.S. Bureau of Labor Statistics — Consumer Price Index news release, August 2026 (published September 11, 2026)</a></li>
 </ul>
 <h2>Related tools</h2>
-<ul>
+<ul class="related-tools">
 <li><a href="/compound-interest-calculator/">Compound Interest Calculator</a></li>
 <li><a href="/investment-calculator/">Investment Calculator</a></li>
 <li><a href="/cagr-calculator/">CAGR Calculator</a></li>
@@ -74,5 +73,6 @@
 <div class="footer-bottom"><p>Educational calculators, not investment advice. Results depend on your assumptions; past returns do not guarantee future results.</p><p>© <span id="y"></span> Fire Math Calc</p></div>
 </div></footer>
 <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+<script src="/assets/nav.js" defer></script>
 </body>
 </html>

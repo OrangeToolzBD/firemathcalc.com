@@ -24,13 +24,12 @@
 <script src="/assets/calc-core.js" defer></script>
 </head>
 <body>
-<header class="site"><div class="wrap"><a class="logo" href="/"><img src="/assets/logo.png" alt="Fire Math Calc" width="44" height="34"></a><nav class="site"><a href="/compound-interest-calculator/">Compound Interest</a><a href="/inflation-calculator/">Inflation</a><a href="/investment-calculator/">Investment</a><a href="/retirement-calculator/">Retirement</a><a href="/#guides">Guides</a></nav></div></header>
+<header class="site"><div class="wrap"><a class="logo" href="/"><img src="/assets/logo.png" alt="Fire Math Calc" width="44" height="34"></a><button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav"><span></span></button><nav class="site" id="site-nav"><a href="/compound-interest-calculator/">Compound Interest</a><a href="/inflation-calculator/">Inflation</a><a href="/investment-calculator/">Investment</a><a href="/retirement-calculator/">Retirement</a><a href="/#guides">Guides</a></nav></div></header>
 <main><div class="wrap">
 <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Fire Math Calc</a> › Coast FIRE Calculator</nav>
 <h1>Coast FIRE Calculator</h1>
-<p class="answer"><strong>Coast FIRE</strong> is the point where your investments could grow to your full retirement number with no further contributions. Here is what Coast FIRE looks like in numbers: a 30-year-old who wants $1,000,000 by 60 needs about $231,377 invested today, assuming a 5% yearly return after inflation. This calculator finds your figure and your gap.</p>
-<p class="updated">Updated <time datetime="2026-09-20">September 20, 2026</time> · By <a href="/about/">Fire Math Calc</a></p>
 <div id="calculator" data-calc="coastFire"><noscript>This tool needs JavaScript turned on.</noscript></div>
+<div class="answer-panel"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.6c.6.5 1 1.2 1 2.4h6c0-1.2.4-1.9 1-2.4A7 7 0 0 0 12 2z"/></svg></span><div><p class="answer"><strong>Coast FIRE</strong> is the point where your investments could grow to your full retirement number with no further contributions. Here is what Coast FIRE looks like in numbers: a 30-year-old who wants $1,000,000 by 60 needs about $231,377 invested today, assuming a 5% yearly return after inflation. This calculator finds your figure and your gap.</p><p class="updated">Updated <time datetime="2026-09-20">September 20, 2026</time> · By <a href="/about/">Fire Math Calc</a></p></div></div>
 <div class="ad-slot"><!-- Ad slot 1 (below the tool). Empty until the ad network is approved; reserve its height in CSS first. --></div>
 <h2>What is Coast FIRE?</h2>
 <p>Coast FIRE means you have already saved enough for retirement, as long as the money is left to grow. From that point you only need to earn enough to cover your current spending. You stop saving for retirement and let compounding carry the balance to your full FIRE number by the age you choose.</p><p>The appeal is flexibility. Once you reach Coast FIRE, you can take a lower-paid job, work fewer hours or take a career break, with less worry that retirement falls behind. The price is that your balance has to stay invested, untouched, for many years, and the return along the way is not guaranteed.</p><p>Coast FIRE is a community term, not a financial standard. The calculator keeps it precise with one definition: the amount that, left to grow at your assumed return with no more contributions, reaches your FIRE number by your retirement age.</p><p>Your FIRE number here is the same as on the <a href="/fire-calculator/">FIRE calculator</a>: yearly retirement spending divided by your withdrawal rate. The default 4% rate traces back to William Bengen’s <a href="https://www.financialplanningassociation.org/sites/default/files/2021-04/MAR04%20Determining%20Withdrawal%20Rates%20Using%20Historical%20Data.pdf" rel="nofollow noopener">1994 <em>Journal of Financial Planning</em> study</a>. For past retirements from 1926 onward, a 4% first-year withdrawal raised with inflation lasted at least 33 years on the portfolio he tested. Both the rate and the return remain your assumptions.</p>
@@ -53,7 +52,7 @@
 <li><a href="https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-exceptions-to-tax-on-early-distributions" rel="nofollow noopener">IRS — Retirement topics: Exceptions to tax on early distributions</a></li>
 </ul>
 <h2>Related tools</h2>
-<ul>
+<ul class="related-tools">
 <li><a href="/fire-calculator/">FIRE Calculator</a></li>
 <li><a href="/how-much-do-i-need-to-retire/">How Much Do I Need to Retire?</a></li>
 <li><a href="/compound-interest-calculator/">Compound Interest Calculator</a></li>
@@ -72,5 +71,6 @@
 <div class="footer-bottom"><p>Educational calculators, not investment advice. Results depend on your assumptions; past returns do not guarantee future results.</p><p>© <span id="y"></span> Fire Math Calc</p></div>
 </div></footer>
 <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+<script src="/assets/nav.js" defer></script>
 </body>
 </html>

@@ -24,13 +24,12 @@
 <script src="/assets/calc-core.js" defer></script>
 </head>
 <body>
-<header class="site"><div class="wrap"><a class="logo" href="/"><img src="/assets/logo.png" alt="Fire Math Calc" width="44" height="34"></a><nav class="site"><a href="/compound-interest-calculator/">Compound Interest</a><a href="/inflation-calculator/">Inflation</a><a href="/investment-calculator/">Investment</a><a href="/retirement-calculator/">Retirement</a><a href="/#guides">Guides</a></nav></div></header>
+<header class="site"><div class="wrap"><a class="logo" href="/"><img src="/assets/logo.png" alt="Fire Math Calc" width="44" height="34"></a><button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav"><span></span></button><nav class="site" id="site-nav"><a href="/compound-interest-calculator/">Compound Interest</a><a href="/inflation-calculator/">Inflation</a><a href="/investment-calculator/">Investment</a><a href="/retirement-calculator/">Retirement</a><a href="/#guides">Guides</a></nav></div></header>
 <main><div class="wrap">
 <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Fire Math Calc</a> › Net Worth Calculator</nav>
 <h1>Net Worth Calculator</h1>
-<p class="answer">This <strong>net worth calculator</strong> adds up what you own and subtracts what you owe. The sample household holds $468,000 of assets and $252,000 of debts, a net worth of $216,000. For context, the Federal Reserve’s <a href="https://www.federalreserve.gov/publications/files/scf23.pdf" rel="nofollow noopener">Survey of Consumer Finances</a> put median U.S. family net worth at $192,900 in 2022.</p>
-<p class="updated">Updated <time datetime="2026-09-20">September 20, 2026</time> · By <a href="/about/">Fire Math Calc</a></p>
 <div id="calculator" data-calc="netWorth"><noscript>This tool needs JavaScript turned on.</noscript></div>
+<div class="answer-panel"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.6c.6.5 1 1.2 1 2.4h6c0-1.2.4-1.9 1-2.4A7 7 0 0 0 12 2z"/></svg></span><div><p class="answer">This <strong>net worth calculator</strong> adds up what you own and subtracts what you owe. The sample household holds $468,000 of assets and $252,000 of debts, a net worth of $216,000. For context, the Federal Reserve’s <a href="https://www.federalreserve.gov/publications/files/scf23.pdf" rel="nofollow noopener">Survey of Consumer Finances</a> put median U.S. family net worth at $192,900 in 2022.</p><p class="updated">Updated <time datetime="2026-09-20">September 20, 2026</time> · By <a href="/about/">Fire Math Calc</a></p></div></div>
 <div class="ad-slot"><!-- Ad slot 1 (below the tool). Empty until the ad network is approved; reserve its height in CSS first. --></div>
 <h2>How do I calculate my net worth?</h2>
 <p>Net worth is <strong>total assets minus total liabilities</strong>. List everything you own at its current value, list every debt at its current balance, and subtract. The Federal Reserve uses the same definition in its Survey of Consumer Finances: the difference between a family’s assets and its liabilities. If your debts are larger than your assets, the result is negative, and the goal becomes moving it toward zero.</p><p>The calculator’s sample household:</p><div class="table-wrap"><table class="data"><thead><tr><th>Own</th><th>Value</th><th>Owe</th><th>Balance</th></tr></thead><tbody><tr><td>Checking and savings</td><td>$15,000</td><td>Mortgage</td><td>$240,000</td></tr><tr><td>Retirement accounts</td><td>$85,000</td><td>Car loan</td><td>$9,000</td></tr><tr><td>Home value</td><td>$350,000</td><td>Credit cards</td><td>$3,000</td></tr><tr><td>Car</td><td>$18,000</td><td></td><td></td></tr><tr><td><strong>Total</strong></td><td><strong>$468,000</strong></td><td><strong>Total</strong></td><td><strong>$252,000</strong></td></tr></tbody></table></div><p>Net worth: $468,000 − $252,000 = <strong>$216,000</strong>.</p><p>Add or remove rows to match your situation. Use statement balances for debts and realistic current values for assets, not what you paid.</p><p>A single figure matters less than the trend. Recording it on the same date each year shows whether you are moving toward goals such as the target on the <a href="/fire-calculator/">FIRE calculator</a>. Your inputs stay in your browser, as described on the privacy page.</p>
@@ -50,7 +49,7 @@
 <li><a href="https://www.federalreserve.gov/publications/files/scf23.pdf" rel="nofollow noopener">Federal Reserve Board — Changes in U.S. Family Finances from 2019 to 2022: Evidence from the Survey of Consumer Finances (October 2023)</a></li>
 </ul>
 <h2>Related tools</h2>
-<ul>
+<ul class="related-tools">
 <li><a href="/dividend-calculator/">Dividend Calculator</a></li>
 <li><a href="/savings-interest-calculator/">Savings Interest Calculator</a></li>
 <li><a href="/annuity-calculator/">Annuity Calculator</a></li>
@@ -69,5 +68,6 @@
 <div class="footer-bottom"><p>Educational calculators, not investment advice. Results depend on your assumptions; past returns do not guarantee future results.</p><p>© <span id="y"></span> Fire Math Calc</p></div>
 </div></footer>
 <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+<script src="/assets/nav.js" defer></script>
 </body>
 </html>

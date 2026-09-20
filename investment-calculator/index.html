@@ -24,13 +24,12 @@
 <script src="/assets/calc-core.js" defer></script>
 </head>
 <body>
-<header class="site"><div class="wrap"><a class="logo" href="/"><img src="/assets/logo.png" alt="Fire Math Calc" width="44" height="34"></a><nav class="site"><a href="/compound-interest-calculator/">Compound Interest</a><a href="/inflation-calculator/">Inflation</a><a href="/investment-calculator/">Investment</a><a href="/retirement-calculator/">Retirement</a><a href="/#guides">Guides</a></nav></div></header>
+<header class="site"><div class="wrap"><a class="logo" href="/"><img src="/assets/logo.png" alt="Fire Math Calc" width="44" height="34"></a><button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav"><span></span></button><nav class="site" id="site-nav"><a href="/compound-interest-calculator/">Compound Interest</a><a href="/inflation-calculator/">Inflation</a><a href="/investment-calculator/">Investment</a><a href="/retirement-calculator/">Retirement</a><a href="/#guides">Guides</a></nav></div></header>
 <main><div class="wrap">
 <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Fire Math Calc</a> › Investment Calculator</nav>
 <h1>Investment Calculator</h1>
-<p class="answer">This <strong>investment calculator</strong> shows how a starting amount and monthly deposits could grow at a return you assume, compounded monthly. $10,000 plus $300 a month at 7% for 20 years reaches about $196,665. $82,000 of that is your money and $114,665 is growth. Add an inflation rate to see the result in today’s dollars.</p>
-<p class="updated">Updated <time datetime="2026-09-20">September 20, 2026</time> · By <a href="/about/">Fire Math Calc</a></p>
 <div id="calculator" data-calc="investment"><noscript>This tool needs JavaScript turned on.</noscript></div>
+<div class="answer-panel"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.6c.6.5 1 1.2 1 2.4h6c0-1.2.4-1.9 1-2.4A7 7 0 0 0 12 2z"/></svg></span><div><p class="answer">This <strong>investment calculator</strong> shows how a starting amount and monthly deposits could grow at a return you assume, compounded monthly. $10,000 plus $300 a month at 7% for 20 years reaches about $196,665. $82,000 of that is your money and $114,665 is growth. Add an inflation rate to see the result in today’s dollars.</p><p class="updated">Updated <time datetime="2026-09-20">September 20, 2026</time> · By <a href="/about/">Fire Math Calc</a></p></div></div>
 <div class="ad-slot"><!-- Ad slot 1 (below the tool). Empty until the ad network is approved; reserve its height in CSS first. --></div>
 <h2>How much will my investment grow?</h2>
 <p>Growth depends on four inputs: your starting amount, what you add each month, the yearly return you assume and how long you stay invested. The calculator compounds monthly and adds each deposit at the end of its month, using the future-value formula <strong>FV = P(1 + i)^n + PMT × [(1 + i)^n − 1] ÷ i</strong>. Here i is the yearly rate ÷ 12 and n is the number of months.</p><p>With the default inputs ($10,000 to start, $300 a month, an assumed 7% return), the balance grows like this:</p><div class="table-wrap"><table class="data"><thead><tr><th>Years</th><th>You put in</th><th>Balance (7%, your assumption)</th></tr></thead><tbody><tr><td>10</td><td>$46,000</td><td>$72,022</td></tr><tr><td>20</td><td>$82,000</td><td>$196,665</td></tr><tr><td>30</td><td>$118,000</td><td>$447,156</td></tr></tbody></table></div><p>The gap between what you put in and the balance widens each decade, because growth compounds on earlier growth. That is the same effect the <a href="/compound-interest-calculator/">compound interest calculator</a> shows year by year.</p><p>The results leave out taxes and fees. A real portfolio would also move up and down rather than rising smoothly. The 7% default is only a starting point, not a prediction. Try a lower rate to see a more cautious outcome.</p><p>If you know an investment’s start and end values and want its growth rate, use the <a href="/cagr-calculator/">CAGR calculator</a>.</p>
@@ -49,7 +48,7 @@
 <li><a href="https://download.bls.gov/pub/time.series/cu/cu.data.1.AllItems" rel="nofollow noopener">U.S. Bureau of Labor Statistics — CPI-U all items, U.S. city average, NSA (CUUR0000SA0), downloaded September 16, 2026</a></li>
 </ul>
 <h2>Related tools</h2>
-<ul>
+<ul class="related-tools">
 <li><a href="/compound-interest-calculator/">Compound Interest Calculator</a></li>
 <li><a href="/inflation-calculator/">Inflation Calculator</a></li>
 <li><a href="/cagr-calculator/">CAGR Calculator</a></li>
@@ -68,5 +67,6 @@
 <div class="footer-bottom"><p>Educational calculators, not investment advice. Results depend on your assumptions; past returns do not guarantee future results.</p><p>© <span id="y"></span> Fire Math Calc</p></div>
 </div></footer>
 <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+<script src="/assets/nav.js" defer></script>
 </body>
 </html>

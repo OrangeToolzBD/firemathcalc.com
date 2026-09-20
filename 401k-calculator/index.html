@@ -24,13 +24,12 @@
 <script src="/assets/calc-core.js" defer></script>
 </head>
 <body>
-<header class="site"><div class="wrap"><a class="logo" href="/"><img src="/assets/logo.png" alt="Fire Math Calc" width="44" height="34"></a><nav class="site"><a href="/compound-interest-calculator/">Compound Interest</a><a href="/inflation-calculator/">Inflation</a><a href="/investment-calculator/">Investment</a><a href="/retirement-calculator/">Retirement</a><a href="/#guides">Guides</a></nav></div></header>
+<header class="site"><div class="wrap"><a class="logo" href="/"><img src="/assets/logo.png" alt="Fire Math Calc" width="44" height="34"></a><button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav"><span></span></button><nav class="site" id="site-nav"><a href="/compound-interest-calculator/">Compound Interest</a><a href="/inflation-calculator/">Inflation</a><a href="/investment-calculator/">Investment</a><a href="/retirement-calculator/">Retirement</a><a href="/#guides">Guides</a></nav></div></header>
 <main><div class="wrap">
 <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Fire Math Calc</a> › 401(k) Calculator</nav>
 <h1>401(k) Calculator</h1>
-<p class="answer">This <strong>401k calculator</strong> projects your balance from your pay, contribution rate, employer match and an assumed return. It caps your deferral at the <a href="https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500" rel="nofollow noopener">2026 IRS limit of $24,500</a> plus any catch-up. On an $80,000 salary, saving 10% with a 50% match up to 6% from $50,000 at 40, you reach about $785,184 by 65 at 6%.</p>
-<p class="updated">Updated <time datetime="2026-09-20">September 20, 2026</time> · By <a href="/about/">Fire Math Calc</a></p>
 <div id="calculator" data-calc="k401"><noscript>This tool needs JavaScript turned on.</noscript></div>
+<div class="answer-panel"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.6c.6.5 1 1.2 1 2.4h6c0-1.2.4-1.9 1-2.4A7 7 0 0 0 12 2z"/></svg></span><div><p class="answer">This <strong>401k calculator</strong> projects your balance from your pay, contribution rate, employer match and an assumed return. It caps your deferral at the <a href="https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500" rel="nofollow noopener">2026 IRS limit of $24,500</a> plus any catch-up. On an $80,000 salary, saving 10% with a 50% match up to 6% from $50,000 at 40, you reach about $785,184 by 65 at 6%.</p><p class="updated">Updated <time datetime="2026-09-20">September 20, 2026</time> · By <a href="/about/">Fire Math Calc</a></p></div></div>
 <div class="ad-slot"><!-- Ad slot 1 (below the tool). Empty until the ad network is approved; reserve its height in CSS first. --></div>
 <h2>How much will my 401(k) be worth at retirement?</h2>
 <p>Your balance at retirement comes from your current balance, what you and your employer add each year, the years until you retire, and the return you assume. The calculator works one year at a time:</p><ol><li>Grow last year’s balance by your return.</li><li>Add your contribution, capped at the IRS limit for your age that year.</li><li>Add your employer’s match.</li></ol><p>It can also raise your salary each year by an amount you choose.</p><p>Worked example, from the calculator’s tests:</p><ul><li>Age 40, retiring at 65, so 25 years.</li><li>$50,000 already saved.</li><li>$80,000 salary, with no raises assumed.</li><li>You contribute 10%: $8,000 a year.</li><li>Your employer matches 50% of your contribution, up to 6% of pay: $2,400 a year.</li><li>An assumed 6% yearly return.</li></ul><p>Result: about <strong>$785,184</strong> at 65. Of that, $50,000 is the starting balance and $260,000 is new money: 25 years of $8,000 from you plus $2,400 from your employer. The rest is growth.</p><p>Contribution rate makes a large difference. In the same example, contributing 6% instead of 10% gives about $609,618. Contributing 4%, which also earns a smaller match, gives about $477,943.</p><p>Figures are before taxes and fees, and contributions are added at year end. Future years are held at 2026 limits. Returns are your assumption, not a forecast. To see what the balance might mean in today’s dollars, try the <a href="/investment-calculator/">investment calculator</a> with an inflation rate.</p>
@@ -53,7 +52,7 @@
 <li><a href="https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-catch-up-contributions" rel="nofollow noopener">IRS — Retirement topics: Catch-up contributions</a></li>
 </ul>
 <h2>Related tools</h2>
-<ul>
+<ul class="related-tools">
 <li><a href="/roth-ira-calculator/">Roth IRA Calculator</a></li>
 <li><a href="/retirement-calculator/">Retirement Calculator</a></li>
 <li><a href="/compound-interest-calculator/">Compound Interest Calculator</a></li>
@@ -72,5 +71,6 @@
 <div class="footer-bottom"><p>Educational calculators, not investment advice. Results depend on your assumptions; past returns do not guarantee future results.</p><p>© <span id="y"></span> Fire Math Calc</p></div>
 </div></footer>
 <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+<script src="/assets/nav.js" defer></script>
 </body>
 </html>

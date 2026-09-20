@@ -24,13 +24,12 @@
 <script src="/assets/calc-core.js" defer></script>
 </head>
 <body>
-<header class="site"><div class="wrap"><a class="logo" href="/"><img src="/assets/logo.png" alt="Fire Math Calc" width="44" height="34"></a><nav class="site"><a href="/compound-interest-calculator/">Compound Interest</a><a href="/inflation-calculator/">Inflation</a><a href="/investment-calculator/">Investment</a><a href="/retirement-calculator/">Retirement</a><a href="/#guides">Guides</a></nav></div></header>
+<header class="site"><div class="wrap"><a class="logo" href="/"><img src="/assets/logo.png" alt="Fire Math Calc" width="44" height="34"></a><button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav"><span></span></button><nav class="site" id="site-nav"><a href="/compound-interest-calculator/">Compound Interest</a><a href="/inflation-calculator/">Inflation</a><a href="/investment-calculator/">Investment</a><a href="/retirement-calculator/">Retirement</a><a href="/#guides">Guides</a></nav></div></header>
 <main><div class="wrap">
 <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Fire Math Calc</a> › Dividend Reinvestment (DRIP) Calculator</nav>
 <h1>Dividend Reinvestment (DRIP) Calculator</h1>
-<p class="answer">This <strong>dividend reinvestment calculator</strong> shows how using dividends to buy more shares grows your share count over time. Start with 100 shares at $50 and a 4% yield, reinvest every dividend, and hold the price flat: after 10 years you own about 148.02 shares worth $7,401. Taking the dividends as cash instead leaves you with 100 shares.</p>
-<p class="updated">Updated <time datetime="2026-09-20">September 20, 2026</time> · By <a href="/about/">Fire Math Calc</a></p>
 <div id="calculator" data-calc="drip"><noscript>This tool needs JavaScript turned on.</noscript></div>
+<div class="answer-panel"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.6c.6.5 1 1.2 1 2.4h6c0-1.2.4-1.9 1-2.4A7 7 0 0 0 12 2z"/></svg></span><div><p class="answer">This <strong>dividend reinvestment calculator</strong> shows how using dividends to buy more shares grows your share count over time. Start with 100 shares at $50 and a 4% yield, reinvest every dividend, and hold the price flat: after 10 years you own about 148.02 shares worth $7,401. Taking the dividends as cash instead leaves you with 100 shares.</p><p class="updated">Updated <time datetime="2026-09-20">September 20, 2026</time> · By <a href="/about/">Fire Math Calc</a></p></div></div>
 <div class="ad-slot"><!-- Ad slot 1 (below the tool). Empty until the ad network is approved; reserve its height in CSS first. --></div>
 <h2>How does dividend reinvestment work?</h2>
 <p>With a dividend reinvestment plan (DRIP), your dividends buy more shares instead of being paid to you as cash. Those new shares earn dividends of their own, so your share count, and your future dividends, grow over time without you adding new money. The <a href="https://www.irs.gov/publications/p550" rel="nofollow noopener">IRS describes such plans</a> as buying additional shares with dividends instead of receiving cash, and notes that most mutual funds offer a similar option.</p><p>The calculator runs one step per year:</p><ol><li><strong>Dividend:</strong> shares × price × yield.</li><li><strong>New price:</strong> the price grows by your assumed price growth.</li><li><strong>Reinvest:</strong> the dividend buys dividend ÷ new price more shares.</li><li><strong>Next year’s yield:</strong> adjusts so the dividend per share grows at your assumed dividend growth rate while the price moves on its own.</li></ol><p>With the defaults, year one pays 100 × $50 × 4% = $200. That buys 4 new shares, so year two starts with 104 shares, pays $208, and so on.</p><p>The model pays and reinvests once a year at the year-end price. If your holding pays more often than once a year, reinvesting each payment would compound slightly faster than shown. The calculator also ignores taxes and any plan fees. Dividend and price growth are your assumptions.</p><p>For income without reinvesting, use the <a href="/dividend-calculator/">dividend calculator</a>.</p>
@@ -51,7 +50,7 @@
 <li><a href="https://www.irs.gov/taxtopics/tc404" rel="nofollow noopener">IRS — Topic no. 404, Dividends</a></li>
 </ul>
 <h2>Related tools</h2>
-<ul>
+<ul class="related-tools">
 <li><a href="/dividend-calculator/">Dividend Calculator</a></li>
 <li><a href="/savings-interest-calculator/">Savings Interest Calculator</a></li>
 <li><a href="/annuity-calculator/">Annuity Calculator</a></li>
@@ -70,5 +69,6 @@
 <div class="footer-bottom"><p>Educational calculators, not investment advice. Results depend on your assumptions; past returns do not guarantee future results.</p><p>© <span id="y"></span> Fire Math Calc</p></div>
 </div></footer>
 <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+<script src="/assets/nav.js" defer></script>
 </body>
 </html>

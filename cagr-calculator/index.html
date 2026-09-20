@@ -24,13 +24,12 @@
 <script src="/assets/calc-core.js" defer></script>
 </head>
 <body>
-<header class="site"><div class="wrap"><a class="logo" href="/"><img src="/assets/logo.png" alt="Fire Math Calc" width="44" height="34"></a><nav class="site"><a href="/compound-interest-calculator/">Compound Interest</a><a href="/inflation-calculator/">Inflation</a><a href="/investment-calculator/">Investment</a><a href="/retirement-calculator/">Retirement</a><a href="/#guides">Guides</a></nav></div></header>
+<header class="site"><div class="wrap"><a class="logo" href="/"><img src="/assets/logo.png" alt="Fire Math Calc" width="44" height="34"></a><button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav"><span></span></button><nav class="site" id="site-nav"><a href="/compound-interest-calculator/">Compound Interest</a><a href="/inflation-calculator/">Inflation</a><a href="/investment-calculator/">Investment</a><a href="/retirement-calculator/">Retirement</a><a href="/#guides">Guides</a></nav></div></header>
 <main><div class="wrap">
 <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Fire Math Calc</a> › CAGR Calculator</nav>
 <h1>CAGR Calculator</h1>
-<p class="answer">This <strong>CAGR calculator</strong> finds the compound annual growth rate: the steady yearly rate that turns a starting value into an ending value over a set time. $10,000 that grows to $25,000 in 7 years has a CAGR of about 13.99%. The formula is (ending ÷ starting)^(1 ÷ years) − 1.</p>
-<p class="updated">Updated <time datetime="2026-09-20">September 20, 2026</time> · By <a href="/about/">Fire Math Calc</a></p>
 <div id="calculator" data-calc="cagr"><noscript>This tool needs JavaScript turned on.</noscript></div>
+<div class="answer-panel"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.6c.6.5 1 1.2 1 2.4h6c0-1.2.4-1.9 1-2.4A7 7 0 0 0 12 2z"/></svg></span><div><p class="answer">This <strong>CAGR calculator</strong> finds the compound annual growth rate: the steady yearly rate that turns a starting value into an ending value over a set time. $10,000 that grows to $25,000 in 7 years has a CAGR of about 13.99%. The formula is (ending ÷ starting)^(1 ÷ years) − 1.</p><p class="updated">Updated <time datetime="2026-09-20">September 20, 2026</time> · By <a href="/about/">Fire Math Calc</a></p></div></div>
 <div class="ad-slot"><!-- Ad slot 1 (below the tool). Empty until the ad network is approved; reserve its height in CSS first. --></div>
 <h2>What is CAGR?</h2>
 <p>CAGR, or compound annual growth rate, is the single yearly growth rate that would take an investment from its starting value to its ending value if it grew at the same pace every year. It smooths out the ups and downs, so you can compare growth over different periods or between different investments on one scale.</p><p>For example, suppose $10,000 became $25,000 in 7 years. The total change is 150%. The CAGR of 13.99% is the constant yearly rate that produces the same result: $10,000 × 1.1399^7 ≈ $25,000.</p><p>The real path almost certainly went up and down. CAGR describes where you started and where you ended, not how bumpy the journey was.</p><p>CAGR is used for investment returns, and also for revenue, dividends, prices and anything else measured at two points in time. It works best when you have one starting value and one ending value, with no money added or removed in between. If you made regular deposits, the <a href="/investment-calculator/">investment calculator</a> is a better fit, because deposits would inflate the apparent growth rate.</p>
@@ -50,7 +49,7 @@
 <li><a href="https://www.aaii.com/journal/199802/feature.pdf" rel="nofollow noopener">AAII Journal — Cooley, Hubbard and Walz, “Retirement Savings: Choosing a Withdrawal Rate That Is Sustainable,” February 1998</a></li>
 </ul>
 <h2>Related tools</h2>
-<ul>
+<ul class="related-tools">
 <li><a href="/compound-interest-calculator/">Compound Interest Calculator</a></li>
 <li><a href="/inflation-calculator/">Inflation Calculator</a></li>
 <li><a href="/investment-calculator/">Investment Calculator</a></li>
@@ -69,5 +68,6 @@
 <div class="footer-bottom"><p>Educational calculators, not investment advice. Results depend on your assumptions; past returns do not guarantee future results.</p><p>© <span id="y"></span> Fire Math Calc</p></div>
 </div></footer>
 <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+<script src="/assets/nav.js" defer></script>
 </body>
 </html>

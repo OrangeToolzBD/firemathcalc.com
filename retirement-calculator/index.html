@@ -24,13 +24,12 @@
 <script src="/assets/calc-core.js" defer></script>
 </head>
 <body>
-<header class="site"><div class="wrap"><a class="logo" href="/"><img src="/assets/logo.png" alt="Fire Math Calc" width="44" height="34"></a><nav class="site"><a href="/compound-interest-calculator/">Compound Interest</a><a href="/inflation-calculator/">Inflation</a><a href="/investment-calculator/">Investment</a><a href="/retirement-calculator/">Retirement</a><a href="/#guides">Guides</a></nav></div></header>
+<header class="site"><div class="wrap"><a class="logo" href="/"><img src="/assets/logo.png" alt="Fire Math Calc" width="44" height="34"></a><button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav"><span></span></button><nav class="site" id="site-nav"><a href="/compound-interest-calculator/">Compound Interest</a><a href="/inflation-calculator/">Inflation</a><a href="/investment-calculator/">Investment</a><a href="/retirement-calculator/">Retirement</a><a href="/#guides">Guides</a></nav></div></header>
 <main><div class="wrap">
 <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Fire Math Calc</a> › Retirement Calculator</nav>
 <h1>Retirement Calculator</h1>
-<p class="answer">This <strong>retirement calculator</strong> compares what your savings could grow to with what your retirement will cost after Social Security or a pension. With the defaults ($50,000 saved at 35, $1,000 a month, 6% before retirement), you would have about $1,305,644 at 65. Funding a $40,000 yearly gap for 25 years at 4% needs $624,883.</p>
-<p class="updated">Updated <time datetime="2026-09-20">September 20, 2026</time> · By <a href="/about/">Fire Math Calc</a></p>
 <div id="calculator" data-calc="retirement"><noscript>This tool needs JavaScript turned on.</noscript></div>
+<div class="answer-panel"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.6c.6.5 1 1.2 1 2.4h6c0-1.2.4-1.9 1-2.4A7 7 0 0 0 12 2z"/></svg></span><div><p class="answer">This <strong>retirement calculator</strong> compares what your savings could grow to with what your retirement will cost after Social Security or a pension. With the defaults ($50,000 saved at 35, $1,000 a month, 6% before retirement), you would have about $1,305,644 at 65. Funding a $40,000 yearly gap for 25 years at 4% needs $624,883.</p><p class="updated">Updated <time datetime="2026-09-20">September 20, 2026</time> · By <a href="/about/">Fire Math Calc</a></p></div></div>
 <div class="ad-slot"><!-- Ad slot 1 (below the tool). Empty until the ad network is approved; reserve its height in CSS first. --></div>
 <h2>How much do I need saved to retire?</h2>
 <p>You need enough to cover the gap between your yearly spending and your other income, for as many years as you expect retirement to last. The calculator computes that as a lump sum: <strong>needed = gap × [1 − (1 + r)^−years] ÷ r</strong>, where r is the return you assume during retirement. This is the present value of an annuity, with each withdrawal taken at the end of a year.</p><p>With the defaults:</p><ul><li>Spending $60,000 a year, minus $20,000 of Social Security or pension income, leaves a $40,000 gap.</li><li>Funding that gap for 25 years at an assumed 4% return needs <strong>$624,883</strong>.</li><li>On the savings side, $50,000 plus $1,000 a month for 30 years at an assumed 6%, compounded monthly, grows to <strong>$1,305,644</strong>.</li><li>That is a surplus of about $680,761 on these assumptions.</li></ul><p>The calculator plans for the money to run out at the end of the period you choose. If you want the savings to last indefinitely, or to leave an estate, a withdrawal-rate approach gives a larger target. At a 4% first-year withdrawal, a $40,000 gap needs $1,000,000. The <a href="/how-much-do-i-need-to-retire/">how much do I need to retire guide</a> explains that approach and the research behind it.</p><p>Choose your years in retirement with care. The Trinity study authors point out that you have a 50% chance of outliving your actuarial life expectancy. They suggest planning conservatively and adding a few years.</p>
@@ -54,7 +53,7 @@
 <li><a href="https://www.irs.gov/retirement-plans/traditional-and-roth-iras" rel="nofollow noopener">IRS — Traditional and Roth IRAs</a></li>
 </ul>
 <h2>Related tools</h2>
-<ul>
+<ul class="related-tools">
 <li><a href="/roth-ira-calculator/">Roth IRA Calculator</a></li>
 <li><a href="/401k-calculator/">401(k) Calculator</a></li>
 <li><a href="/compound-interest-calculator/">Compound Interest Calculator</a></li>
@@ -73,5 +72,6 @@
 <div class="footer-bottom"><p>Educational calculators, not investment advice. Results depend on your assumptions; past returns do not guarantee future results.</p><p>© <span id="y"></span> Fire Math Calc</p></div>
 </div></footer>
 <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+<script src="/assets/nav.js" defer></script>
 </body>
 </html>

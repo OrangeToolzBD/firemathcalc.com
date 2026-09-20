@@ -24,13 +24,12 @@
 <script src="/assets/calc-core.js" defer></script>
 </head>
 <body>
-<header class="site"><div class="wrap"><a class="logo" href="/"><img src="/assets/logo.png" alt="Fire Math Calc" width="44" height="34"></a><nav class="site"><a href="/compound-interest-calculator/">Compound Interest</a><a href="/inflation-calculator/">Inflation</a><a href="/investment-calculator/">Investment</a><a href="/retirement-calculator/">Retirement</a><a href="/#guides">Guides</a></nav></div></header>
+<header class="site"><div class="wrap"><a class="logo" href="/"><img src="/assets/logo.png" alt="Fire Math Calc" width="44" height="34"></a><button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav"><span></span></button><nav class="site" id="site-nav"><a href="/compound-interest-calculator/">Compound Interest</a><a href="/inflation-calculator/">Inflation</a><a href="/investment-calculator/">Investment</a><a href="/retirement-calculator/">Retirement</a><a href="/#guides">Guides</a></nav></div></header>
 <main><div class="wrap">
 <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Fire Math Calc</a> › FIRE Calculator</nav>
 <h1>FIRE Calculator</h1>
-<p class="answer">This <strong>FIRE calculator</strong> turns your yearly retirement spending into a target: spending divided by your withdrawal rate. At $40,000 a year and 4%, that is $1,000,000. It then counts the years your savings need to get there at the return you assume, and shows each step, so you can change any number and see why the answer moves.</p>
-<p class="updated">Updated <time datetime="2026-09-20">September 20, 2026</time> · By <a href="/about/">Fire Math Calc</a></p>
 <div id="calculator" data-calc="fire"><noscript>This tool needs JavaScript turned on.</noscript></div>
+<div class="answer-panel"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.6c.6.5 1 1.2 1 2.4h6c0-1.2.4-1.9 1-2.4A7 7 0 0 0 12 2z"/></svg></span><div><p class="answer">This <strong>FIRE calculator</strong> turns your yearly retirement spending into a target: spending divided by your withdrawal rate. At $40,000 a year and 4%, that is $1,000,000. It then counts the years your savings need to get there at the return you assume, and shows each step, so you can change any number and see why the answer moves.</p><p class="updated">Updated <time datetime="2026-09-20">September 20, 2026</time> · By <a href="/about/">Fire Math Calc</a></p></div></div>
 <div class="ad-slot"><!-- Ad slot 1 (below the tool). Empty until the ad network is approved; reserve its height in CSS first. --></div>
 <h2>What is a FIRE number?</h2>
 <p>Your FIRE number is the portfolio size that could pay your yearly spending at the withdrawal rate you pick. The formula is <strong>FIRE number = yearly spending ÷ withdrawal rate</strong>. At a 4% rate that works out to 25 times your spending. At 3.5% it is about 28.6 times.</p><p>FIRE stands for financial independence, retire early. The number is not a promise that the money will last. It is a planning target, and it depends heavily on the withdrawal rate, which is your assumption. The rate you choose changes the target more than most people expect:</p><div class="table-wrap"><table class="data"><thead><tr><th>Withdrawal rate (your assumption)</th><th>FIRE number for $40,000 a year</th></tr></thead><tbody><tr><td>3%</td><td>$1,333,333</td></tr><tr><td>3.5%</td><td>$1,142,857</td></tr><tr><td>4%</td><td>$1,000,000</td></tr><tr><td>5%</td><td>$800,000</td></tr></tbody></table></div><p>The 4% default comes from research on past markets. In the <a href="https://www.financialplanningassociation.org/sites/default/files/2021-04/MAR04%20Determining%20Withdrawal%20Rates%20Using%20Historical%20Data.pdf" rel="nofollow noopener">October 1994 <em>Journal of Financial Planning</em></a>, William Bengen tested a first-year withdrawal of 4% of the portfolio, raised with inflation each year after, on a portfolio split evenly between stocks and intermediate-term Treasuries. For retirements starting from 1926 onward, he found no case where that plan ran out of money in under 33 years. A first-year rate of 4.25% could run out in as little as 28 years.</p><p>That was a 30-year question for people retiring around 60 to 65. Retiring at 40 may mean 50 years or more of withdrawals, which is one reason many early retirees consider a lower rate. The <a href="/how-much-do-i-need-to-retire/">how much do I need to retire guide</a> covers the research in more detail.</p>
@@ -57,7 +56,7 @@
 <li><a href="https://www.medicare.gov/basics/get-started-with-medicare" rel="nofollow noopener">Medicare.gov — Get started with Medicare</a></li>
 </ul>
 <h2>Related tools</h2>
-<ul>
+<ul class="related-tools">
 <li><a href="/coast-fire-calculator/">Coast FIRE Calculator</a></li>
 <li><a href="/how-much-do-i-need-to-retire/">How Much Do I Need to Retire?</a></li>
 <li><a href="/compound-interest-calculator/">Compound Interest Calculator</a></li>
@@ -76,5 +75,6 @@
 <div class="footer-bottom"><p>Educational calculators, not investment advice. Results depend on your assumptions; past returns do not guarantee future results.</p><p>© <span id="y"></span> Fire Math Calc</p></div>
 </div></footer>
 <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+<script src="/assets/nav.js" defer></script>
 </body>
 </html>
