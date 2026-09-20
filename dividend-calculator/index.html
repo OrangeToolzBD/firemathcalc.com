@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dividend Calculator: Income From Your Portfolio</title>
+<meta name="description" content="Work out yearly and monthly dividend income from your portfolio and yield, and how that income grows if dividends rise over time.">
+<link rel="canonical" href="https://firemathcalc.com/dividend-calculator/">
+<meta property="og:title" content="Dividend Calculator: Income From Your Portfolio">
+<meta property="og:description" content="Work out yearly and monthly dividend income from your portfolio and yield, and how that income grows if dividends rise over time.">
+<meta property="og:url" content="https://firemathcalc.com/dividend-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://firemathcalc.com/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://firemathcalc.com/assets/og-image.png">
+<link rel="stylesheet" href="/assets/site.css">
+<link rel="icon" type="image/png" href="/assets/favicon.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<style>:root{--brand:#047857;--font:Georgia, "Times New Roman", serif}</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://firemathcalc.com/#org","name":"Fire Math Calc","url":"https://firemathcalc.com/","description":"Fire Math Calc is a free set of early-retirement calculators that show the formula behind every result."},{"@type":"WebApplication","name":"Dividend Calculator","url":"https://firemathcalc.com/dividend-calculator/","description":"Work out yearly and monthly dividend income from your portfolio and yield, and how that income grows if dividends rise over time.","applicationCategory":"FinanceApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@id":"https://firemathcalc.com/#org"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Fire Math Calc","item":"https://firemathcalc.com/"},{"@type":"ListItem","position":2,"name":"Dividend Calculator","item":"https://firemathcalc.com/dividend-calculator/"}]}]}</script>
+
+<script src="/assets/cpi-data.js" defer></script>
+<script src="/assets/calculator.js" defer></script>
+<script src="/assets/calc-core.js" defer></script>
+</head>
+<body>
+<header class="site"><div class="wrap"><a class="logo" href="/"><img src="/assets/logo.png" alt="Fire Math Calc" width="44" height="34"></a><nav class="site"><a href="/compound-interest-calculator/">Compound Interest</a><a href="/inflation-calculator/">Inflation</a><a href="/investment-calculator/">Investment</a><a href="/retirement-calculator/">Retirement</a></nav></div></header>
+<main><div class="wrap">
+<nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Fire Math Calc</a> › Dividend Calculator</nav>
+<h1>Dividend Calculator</h1>
+<p class="answer">This <strong>dividend calculator</strong> multiplies your portfolio value by its dividend yield to estimate yearly income. A $500,000 portfolio yielding 3.5% pays about $17,500 a year, or $1,458 a month, before tax. If that income grows 5% a year, which is your assumption, it would reach about $28,506 a year in 10 years.</p>
+<p class="updated">Updated <time datetime="2026-09-20">September 20, 2026</time> · By <a href="/about/">Fire Math Calc</a></p>
+<div id="calculator" data-calc="dividend"><noscript>This tool needs JavaScript turned on.</noscript></div>
+<div class="ad-slot"><!-- Ad slot 1 (below the tool). Empty until the ad network is approved; reserve its height in CSS first. --></div>
+<h2>How do I calculate dividend income?</h2>
+<p>Yearly dividend income equals portfolio value times dividend yield: <strong>income = value × yield</strong>. Divide by 12 for a monthly average. If you know the dividend per share instead, multiply it by the number of shares you own. Companies and funds set their own payout dates, so real deposits arrive monthly, quarterly or yearly rather than in 12 even amounts.</p><p>To look ahead, the calculator grows today’s income by your assumed dividend growth rate each year: <strong>future income = income × (1 + growth)^years</strong>. With the defaults: $500,000 × 3.5% = $17,500 now. Then $17,500 × 1.05^10 ≈ $28,505.66 in year 10.</p><p>The tool makes three simplifying assumptions, which the result box repeats:</p><ul><li>Dividends are paid out to you, not reinvested.</li><li>The portfolio value stays the same.</li><li>All figures are before tax.</li></ul><p>Dividends can be cut as well as raised, so the growth figure is your assumption. To see what happens when dividends buy more shares, use the <a href="/dividend-reinvestment-calculator/">dividend reinvestment calculator</a>.</p><p>On taxes: the IRS <a href="https://www.irs.gov/taxtopics/tc404" rel="nofollow noopener">Topic 404</a> (reviewed May 29, 2026) explains that ordinary dividends are taxed as ordinary income. Qualified dividends are taxed at the lower capital gain rates. Payers report both on Form 1099-DIV.</p>
+<h2>How do I calculate dividend yield?</h2>
+<p>Dividend yield is a year’s dividends per share divided by the share price: <strong>yield = annual dividends per share ÷ price × 100</strong>. A share priced at $50 that pays $2 a year yields 4%. Because the price is in the formula, yield rises when the price falls and drops when the price rises, even if the dividend stays the same.</p><p>For a fund or a whole portfolio, divide a year of dividend income by the current value. A $500,000 portfolio that paid $17,500 over the past year yields 3.5%.</p><p>Watch which yield you are quoted. A trailing yield uses dividends already paid over the last 12 months. A forward yield uses the payments expected next. The two can differ, especially after a dividend change.</p><p>A high yield is not automatically a good sign. It can reflect a price that has fallen because investors expect a cut. The calculator treats the yield you enter as given and does not judge whether it will last.</p>
+<h2>How much do I need invested to live off dividends?</h2>
+<p>Divide the yearly income you want by the dividend yield: <strong>portfolio needed = yearly income ÷ yield</strong>. For $1,000 a month ($12,000 a year) at a 3.5% yield, that is about $342,857. At a 3% yield it is $400,000. The lower the yield you assume, the larger the portfolio you need.</p><div class="table-wrap"><table class="data"><thead><tr><th>Monthly income wanted</th><th>At 2% yield</th><th>At 3% yield</th><th>At 3.5% yield</th><th>At 4% yield</th></tr></thead><tbody><tr><td>$1,000</td><td>$600,000</td><td>$400,000</td><td>$342,857</td><td>$300,000</td></tr><tr><td>$2,000</td><td>$1,200,000</td><td>$800,000</td><td>$685,714</td><td>$600,000</td></tr><tr><td>$5,000</td><td>$3,000,000</td><td>$2,000,000</td><td>$1,714,286</td><td>$1,500,000</td></tr></tbody></table></div><p>These figures are before tax, so the income you keep will be lower. Dividends also vary, and a portfolio chosen only for yield may be concentrated in a few sectors.</p><p>Living only on dividends is one approach. A total-return approach, where you sell some shares as needed, is another. It is the approach behind the withdrawal-rate studies used on the <a href="/fire-calculator/">FIRE calculator</a>.</p>
+<h2>Dividend growth vs high yield</h2>
+<p>A high-yield approach pays more income now. A dividend-growth approach starts with less income and aims for payouts that rise over time. Which one ends up paying more depends on the growth rate and how long you hold, and neither result is guaranteed. The calculator lets you compare the two by changing the yield and growth inputs.</p><p>An example using only assumed figures on the same $500,000:</p><ul><li><strong>Higher yield:</strong> 4.5% with no growth pays $22,500 every year.</li><li><strong>Lower yield, growing:</strong> 3.5% growing 5% a year starts at $17,500 and reaches about $28,506 in year 10.</li></ul><p>The growing stream passes the flat one partway through the decade. Before that it pays less, so the total received over the early years is lower. Test your own horizon.</p><p>Neither label says anything about risk on its own. A payout can be cut in either kind of holding, and the portfolio value can fall. This page is general education, not a recommendation of any security or fund. The <a href="/cagr-calculator/">CAGR calculator</a> can help you measure the growth rate of a past dividend record.</p>
+<h2>Frequently asked questions</h2>
+<div class="faq">
+<details><summary>How much do I need to make $1,000 a month in dividends?</summary><p>Divide $12,000 by the yield you expect. At 3.5%, that is about $342,857. At 3% it is $400,000, and at 4% it is $300,000. These are pre-tax figures, and dividends can change, so the real amount you keep may differ. Try your own yield in the calculator.</p></details>
+<details><summary>How do I calculate how much dividend I will get?</summary><p>Multiply the number of shares you own by the dividend per share, or multiply your holding’s value by its yield. For example, $500,000 at a 3.5% yield gives about $17,500 a year. Check how often the company or fund pays, since payments may be monthly, quarterly or yearly.</p></details>
+<details><summary>How much money in dividends to make $5,000 a month?</summary><p>You need about $60,000 a year. At a 3.5% yield that takes roughly $1,714,286 invested. At 4% it takes $1,500,000, and at 3% about $2,000,000. Taxes lower what you keep, so a larger portfolio may be needed for $5,000 a month after tax.</p></details>
+<details><summary>How much money in dividends to make $2,000 a month?</summary><p>Divide $24,000 a year by the yield. At 3.5%, that is about $685,714. At 4% it is $600,000, and at 3% it is $800,000. These amounts assume the yield holds and are before tax. Payments usually arrive on the payer’s schedule, so monthly income may be uneven.</p></details>
+</div>
+<h2>Sources</h2>
+<ul class="sources">
+<li><a href="https://www.irs.gov/taxtopics/tc404" rel="nofollow noopener">IRS — Topic no. 404, Dividends</a></li>
+</ul>
+<h2>Related tools</h2>
+<ul>
+<li><a href="/savings-interest-calculator/">Savings Interest Calculator</a></li>
+<li><a href="/annuity-calculator/">Annuity Calculator</a></li>
+<li><a href="/net-worth-calculator/">Net Worth Calculator</a></li>
+<li><a href="/dividend-reinvestment-calculator/">Dividend Reinvestment (DRIP) Calculator</a></li>
+<li><a href="/compound-interest-calculator/">Compound Interest Calculator</a></li>
+<li><a href="/inflation-calculator/">Inflation Calculator</a></li>
+<li><a href="/investment-calculator/">Investment Calculator</a></li>
+<li><a href="/retirement-calculator/">Retirement Calculator</a></li>
+</ul>
+<p class="disclaimer">Educational calculators, not investment advice. Results depend on your assumptions; past returns do not guarantee future results.</p>
+</div></main>
+<footer class="site"><div class="wrap">
+<p><a href="/compound-interest-calculator/">Compound Interest Calculator</a> <a href="/inflation-calculator/">Inflation Calculator</a> <a href="/investment-calculator/">Investment Calculator</a> <a href="/retirement-calculator/">Retirement Calculator</a> <a href="/401k-calculator/">401(k) Calculator</a> <a href="/roth-ira-calculator/">Roth IRA Calculator</a> <a href="/">All tools</a></p>
+<p><a href="/about/">About</a><a href="/methodology/">Methodology</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></p>
+<p>Educational calculators, not investment advice. Results depend on your assumptions; past returns do not guarantee future results.</p>
+<p>© <span id="y"></span> Fire Math Calc</p>
+</div></footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>

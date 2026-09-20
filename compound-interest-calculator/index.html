@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Compound Interest Calculator with Monthly Contributions</title>
+<meta name="description" content="See what monthly investing grows to with compound interest, year by year, and how much of the total is growth versus your own contributions.">
+<link rel="canonical" href="https://firemathcalc.com/compound-interest-calculator/">
+<meta property="og:title" content="Compound Interest Calculator with Monthly Contributions">
+<meta property="og:description" content="See what monthly investing grows to with compound interest, year by year, and how much of the total is growth versus your own contributions.">
+<meta property="og:url" content="https://firemathcalc.com/compound-interest-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://firemathcalc.com/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://firemathcalc.com/assets/og-image.png">
+<link rel="stylesheet" href="/assets/site.css">
+<link rel="icon" type="image/png" href="/assets/favicon.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<style>:root{--brand:#047857;--font:Georgia, "Times New Roman", serif}</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://firemathcalc.com/#org","name":"Fire Math Calc","url":"https://firemathcalc.com/","description":"Fire Math Calc is a free set of early-retirement calculators that show the formula behind every result."},{"@type":"WebApplication","name":"Compound Interest Calculator","url":"https://firemathcalc.com/compound-interest-calculator/","description":"See what monthly investing grows to with compound interest, year by year, and how much of the total is growth versus your own contributions.","applicationCategory":"FinanceApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@id":"https://firemathcalc.com/#org"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Fire Math Calc","item":"https://firemathcalc.com/"},{"@type":"ListItem","position":2,"name":"Compound Interest Calculator","item":"https://firemathcalc.com/compound-interest-calculator/"}]}]}</script>
+
+<script src="/assets/cpi-data.js" defer></script>
+<script src="/assets/calculator.js" defer></script>
+<script src="/assets/calc-core.js" defer></script>
+</head>
+<body>
+<header class="site"><div class="wrap"><a class="logo" href="/"><img src="/assets/logo.png" alt="Fire Math Calc" width="44" height="34"></a><nav class="site"><a href="/compound-interest-calculator/">Compound Interest</a><a href="/inflation-calculator/">Inflation</a><a href="/investment-calculator/">Investment</a><a href="/retirement-calculator/">Retirement</a></nav></div></header>
+<main><div class="wrap">
+<nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Fire Math Calc</a> › Compound Interest Calculator</nav>
+<h1>Compound Interest Calculator</h1>
+<p class="answer">This <strong>compound interest calculator</strong> with monthly contributions compounds your balance every month and adds a deposit at the end of each month. With $10,000 to start, $500 a month and an assumed 7% yearly return, you would have about $106,639 after 10 years. $70,000 of that is your money and $36,639 is growth.</p>
+<p class="updated">Updated <time datetime="2026-09-20">September 20, 2026</time> · By <a href="/about/">Fire Math Calc</a></p>
+<div id="calculator" data-calc="compound"><noscript>This tool needs JavaScript turned on.</noscript></div>
+<div class="ad-slot"><!-- Ad slot 1 (below the tool). Empty until the ad network is approved; reserve its height in CSS first. --></div>
+<h2>How does compound interest work?</h2>
+<p>Compound interest means you earn returns on your earlier returns as well as on the money you put in. Each month the growth is added to the balance, so the next month’s growth is calculated on a slightly larger amount. Over short periods the effect is small. Over decades it usually becomes the largest part of the total.</p><p>Compare that with simple interest, which is paid only on the original amount. $10,000 earning 7% simple interest gains $700 every year, or $7,000 over 10 years. With monthly compounding at the same 7% rate, the same $10,000 grows to about $20,097 in 10 years, a gain of $10,097.</p><p>How often interest compounds also matters, but less than people expect. For $10,000 at 7% over 10 years:</p><div class="table-wrap"><table class="data"><thead><tr><th>Compounding</th><th>Balance after 10 years</th></tr></thead><tbody><tr><td>Yearly</td><td>$19,672</td></tr><tr><td>Monthly (this calculator)</td><td>$20,097</td></tr><tr><td>Daily</td><td>$20,136</td></tr><tr><td>Continuous</td><td>$20,138</td></tr></tbody></table></div><p>Going from monthly to daily adds less than $40 here. The rate you earn and the time you stay invested matter far more. For investments, the 7% default is only an example. Real returns vary from year to year, and the calculator does not predict them.</p>
+<h2>What is the formula for compound interest with monthly contributions?</h2>
+<p>The balance is your starting amount grown for every month, plus each monthly deposit grown for the months it was invested. In symbols: <strong>FV = P(1 + i)^n + PMT × [(1 + i)^n − 1] ÷ i</strong>. Here i is the yearly rate divided by 12, n is the number of months, P is the starting amount and PMT is the monthly deposit.</p><p>The first part grows your starting lump sum. The second part is the future value of a series of equal monthly payments, each made at the end of its month. If the rate is zero, the formula simply adds everything up: P + PMT × n.</p><p>The calculator uses exactly this formula, rounding the number of months to a whole number. It also shows the balance at the end of each year, so you can see where growth starts to overtake your deposits.</p><p>Two things the formula does not include: taxes on the growth, and fees. Both lower the real result. A savings account quotes its rate as an APY, which under <a href="https://www.consumerfinance.gov/rules-policy/regulations/1030/a/" rel="nofollow noopener">Regulation DD, Appendix A</a> reflects both the interest rate and how often it compounds. For those accounts, the <a href="/savings-interest-calculator/">savings interest calculator</a> converts APY to a monthly rate correctly.</p><p>If you know the start and end values and want the rate, the <a href="/cagr-calculator/">CAGR calculator</a> works the formula backwards for a single lump sum.</p>
+<h2>Worked example: $10,000 plus $500 a month</h2>
+<p>Starting with $10,000, adding $500 at the end of every month, at an assumed 7% yearly return compounded monthly, the balance is <strong>$106,639.02</strong> after 10 years. You contribute $70,000 ($10,000 plus 120 deposits of $500). The other $36,639.02 is compound growth.</p><ol><li><strong>Monthly rate:</strong> 7% ÷ 12 ≈ 0.5833%.</li><li><strong>Months:</strong> 10 × 12 = 120.</li><li><strong>Growth factor:</strong> (1.005833)^120 ≈ 2.0097.</li><li><strong>Starting amount grown:</strong> $10,000 × 2.0097 ≈ $20,097.</li><li><strong>Deposits grown:</strong> $500 × (2.0097 − 1) ÷ 0.005833 ≈ $86,542.</li><li><strong>Total:</strong> about $106,639.</li></ol><p>Halfway through, at the end of year 5, the balance is about $49,973. The second five years add more than the first five, because the balance is larger when each month’s growth is applied.</p><p>This is arithmetic from the assumptions shown, not a forecast. A real portfolio would rise and fall along the way.</p>
+<h2>How much does starting earlier change the result?</h2>
+<p>Starting earlier often matters more than investing more, because early deposits compound for longer. At an assumed 7% return, $500 a month from age 25 to 65 grows to about $1,312,407. The same $500 a month from 35 to 65 grows to about $609,985. That is less than half, even though you contribute only $60,000 less.</p><div class="table-wrap"><table class="data"><thead><tr><th>Start age</th><th>Years investing</th><th>You contribute</th><th>Balance at 65 (7%, your assumption)</th></tr></thead><tbody><tr><td>25</td><td>40</td><td>$240,000</td><td>$1,312,407</td></tr><tr><td>35</td><td>30</td><td>$180,000</td><td>$609,985</td></tr></tbody></table></div><p>The extra 10 years add $60,000 of deposits but about $702,000 to the final balance. Most of that difference is growth on the early deposits during the last decade.</p><p>Those balances are in future dollars. The <a href="/investment-calculator/">investment calculator</a> can convert them to today’s dollars using an inflation rate you choose. If you are saving inside a workplace plan, the <a href="/401k-calculator/">401(k) calculator</a> adds employer matching and the 2026 IRS limits. This is general education, not investment advice.</p>
+<h2>Frequently asked questions</h2>
+<div class="faq">
+<details><summary>How do I calculate compound interest with monthly contributions?</summary><p>Use FV = P(1 + i)^n + PMT × [(1 + i)^n − 1] ÷ i, where i is the yearly rate divided by 12 and n is the number of months. For $10,000 plus $500 a month at 7% for 10 years, that gives about $106,639. The calculator above does the arithmetic and shows the balance for each year.</p></details>
+<details><summary>Is daily compounding much better than monthly?</summary><p>Usually only slightly. At 7% for 10 years, $10,000 grows to about $20,097 with monthly compounding and $20,136 with daily compounding, a difference of under $40. The rate itself and the number of years have a much larger effect than how often interest is added.</p></details>
+<details><summary>How much will $500 a month be worth in 30 years?</summary><p>At an assumed 7% yearly return compounded monthly, $500 a month for 30 years grows to about $609,985, from $180,000 of deposits. At a different return the answer changes a lot, so try a few rates in the calculator. Taxes, fees and inflation are not included in that figure.</p></details>
+</div>
+<h2>Sources</h2>
+<ul class="sources">
+<li><a href="https://www.consumerfinance.gov/rules-policy/regulations/1030/a/" rel="nofollow noopener">Consumer Financial Protection Bureau — Regulation DD, Appendix A to Part 1030: Annual Percentage Yield Calculation</a></li>
+</ul>
+<h2>Related tools</h2>
+<ul>
+<li><a href="/inflation-calculator/">Inflation Calculator</a></li>
+<li><a href="/investment-calculator/">Investment Calculator</a></li>
+<li><a href="/cagr-calculator/">CAGR Calculator</a></li>
+<li><a href="/roi-calculator/">ROI Calculator</a></li>
+<li><a href="/rule-of-72-calculator/">Rule of 72 Calculator</a></li>
+<li><a href="/retirement-calculator/">Retirement Calculator</a></li>
+<li><a href="/401k-calculator/">401(k) Calculator</a></li>
+<li><a href="/roth-ira-calculator/">Roth IRA Calculator</a></li>
+</ul>
+<p class="disclaimer">Educational calculators, not investment advice. Results depend on your assumptions; past returns do not guarantee future results.</p>
+</div></main>
+<footer class="site"><div class="wrap">
+<p><a href="/compound-interest-calculator/">Compound Interest Calculator</a> <a href="/inflation-calculator/">Inflation Calculator</a> <a href="/investment-calculator/">Investment Calculator</a> <a href="/retirement-calculator/">Retirement Calculator</a> <a href="/401k-calculator/">401(k) Calculator</a> <a href="/roth-ira-calculator/">Roth IRA Calculator</a> <a href="/">All tools</a></p>
+<p><a href="/about/">About</a><a href="/methodology/">Methodology</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></p>
+<p>Educational calculators, not investment advice. Results depend on your assumptions; past returns do not guarantee future results.</p>
+<p>© <span id="y"></span> Fire Math Calc</p>
+</div></footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>

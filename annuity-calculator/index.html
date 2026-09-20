@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Annuity Calculator: Payout From a Lump Sum</title>
+<meta name="description" content="Work out the monthly payout a lump sum can provide over a fixed period, or what regular payments grow to, at the rate you enter.">
+<link rel="canonical" href="https://firemathcalc.com/annuity-calculator/">
+<meta property="og:title" content="Annuity Calculator: Payout From a Lump Sum">
+<meta property="og:description" content="Work out the monthly payout a lump sum can provide over a fixed period, or what regular payments grow to, at the rate you enter.">
+<meta property="og:url" content="https://firemathcalc.com/annuity-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://firemathcalc.com/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://firemathcalc.com/assets/og-image.png">
+<link rel="stylesheet" href="/assets/site.css">
+<link rel="icon" type="image/png" href="/assets/favicon.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<style>:root{--brand:#047857;--font:Georgia, "Times New Roman", serif}</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://firemathcalc.com/#org","name":"Fire Math Calc","url":"https://firemathcalc.com/","description":"Fire Math Calc is a free set of early-retirement calculators that show the formula behind every result."},{"@type":"WebApplication","name":"Annuity Calculator","url":"https://firemathcalc.com/annuity-calculator/","description":"Work out the monthly payout a lump sum can provide over a fixed period, or what regular payments grow to, at the rate you enter.","applicationCategory":"FinanceApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@id":"https://firemathcalc.com/#org"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Fire Math Calc","item":"https://firemathcalc.com/"},{"@type":"ListItem","position":2,"name":"Annuity Calculator","item":"https://firemathcalc.com/annuity-calculator/"}]}]}</script>
+
+<script src="/assets/cpi-data.js" defer></script>
+<script src="/assets/calculator.js" defer></script>
+<script src="/assets/calc-core.js" defer></script>
+</head>
+<body>
+<header class="site"><div class="wrap"><a class="logo" href="/"><img src="/assets/logo.png" alt="Fire Math Calc" width="44" height="34"></a><nav class="site"><a href="/compound-interest-calculator/">Compound Interest</a><a href="/inflation-calculator/">Inflation</a><a href="/investment-calculator/">Investment</a><a href="/retirement-calculator/">Retirement</a></nav></div></header>
+<main><div class="wrap">
+<nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Fire Math Calc</a> › Annuity Calculator</nav>
+<h1>Annuity Calculator</h1>
+<p class="answer">This <strong>annuity calculator</strong> works out the fixed payment a lump sum can provide over a set number of years at the rate you enter. At 5% a year, $300,000 pays about $1,979.87 a month for 20 years, or $475,168 in total. It can also show what regular payments grow to. Contract quotes from insurers will differ.</p>
+<p class="updated">Updated <time datetime="2026-09-20">September 20, 2026</time> · By <a href="/about/">Fire Math Calc</a></p>
+<div id="calculator" data-calc="annuity"><noscript>This tool needs JavaScript turned on.</noscript></div>
+<div class="ad-slot"><!-- Ad slot 1 (below the tool). Empty until the ad network is approved; reserve its height in CSS first. --></div>
+<h2>How much does an annuity pay per month?</h2>
+<p>For a fixed-period payout, the monthly payment depends on the lump sum, the rate and the number of years. At an assumed 5% yearly rate, each $100,000 pays about $659.96 a month over 20 years, or $536.82 over 30 years. The longer the period, the smaller each payment, because the money must stretch further.</p><div class="table-wrap"><table class="data"><thead><tr><th>Lump sum</th><th>20 years at 5%</th><th>30 years at 5%</th></tr></thead><tbody><tr><td>$100,000</td><td>$659.96/month</td><td>$536.82/month</td></tr><tr><td>$300,000</td><td>$1,979.87/month</td><td>$1,610.46/month</td></tr><tr><td>$400,000</td><td>$2,639.82/month</td><td>$2,147.29/month</td></tr><tr><td>$2,000,000</td><td>$13,199.11/month</td><td>$10,736.43/month</td></tr></tbody></table></div><p>The rate matters too. $300,000 over 20 years pays about $1,663.79 a month at 3%, and $1,250 a month with no interest at all.</p><p>These are the results of the math, not insurance quotes. A real annuity contract sets its own payment, based on the insurer’s pricing, fees and, for lifetime income, your age. Use the calculator to understand the mechanics and to check whether a quote looks reasonable, then read the contract.</p><p>The calculator can also switch to “value of regular payments.” In that mode, $500 a month for 20 years at 5% grows to about $205,517, from $120,000 paid in.</p>
+<h2>What is the formula for an annuity payment?</h2>
+<p>The payment from a lump sum is <strong>PMT = P × r ÷ [1 − (1 + r)^−n]</strong>. P is the lump sum, r is the rate per period (the yearly rate divided by the number of payments per year) and n is the total number of payments. Each payment is made at the end of its period. If the rate is zero, the payment is simply P ÷ n.</p><p>Worked example with the defaults:</p><ol><li><strong>Rate per month:</strong> 5% ÷ 12 ≈ 0.4167%.</li><li><strong>Number of payments:</strong> 20 × 12 = 240.</li><li><strong>Discount term:</strong> (1.004167)^−240 ≈ 0.3686.</li><li><strong>Payment:</strong> $300,000 × 0.004167 ÷ (1 − 0.3686) ≈ <strong>$1,979.87</strong>.</li></ol><p>Over 240 payments, that totals $475,168.13. The $175,168 above the original lump sum is the interest earned on the balance that remains invested while it is being paid out.</p><p>For the growth mode, the formula is the future value of regular payments: <strong>FV = PMT × [(1 + r)^n − 1] ÷ r</strong>. The calculator offers monthly, quarterly and yearly payments. Changing the frequency changes both r and n.</p><p>Retirement planners use the same present-value idea in reverse. The <a href="/retirement-calculator/">retirement calculator</a> works out the lump sum needed to fund a yearly gap for a set number of years.</p>
+<h2>Fixed-period vs lifetime annuities</h2>
+<p>A fixed-period payout, which this calculator models, pays for a set number of years and then stops. A lifetime annuity pays for as long as you live, however long that is. Because nobody knows how long those payments will run, the insurer prices them using your age and its own terms, so they cannot be calculated from a rate and term alone.</p><p><a href="https://www.finra.org/investors/investing/investment-products/annuities" rel="nofollow noopener">FINRA’s investor guide to annuities</a> describes the main types:</p><ul><li><strong>Fixed annuities:</strong> the insurer guarantees the interest rate and the payout.</li><li><strong>Variable annuities:</strong> the value can rise or fall with the funds you choose.</li><li><strong>Indexed annuities:</strong> returns are linked to a market index, with features of both.</li></ul><p>Annuities can also be immediate, with payments starting soon after purchase, or deferred, with payments starting later.</p><p>FINRA points out costs such as surrender charges, mortality and expense risk charges and administrative fees. It also notes that annuity guarantees depend on the insurance company that issues them, and that annuities are not covered by FDIC or SIPC protection.</p><p>Because of those differences, compare any quote against the plain math here. Ask what fees, surrender periods and guarantees apply. If you are weighing an annuity against drawing income from investments, the <a href="/how-much-do-i-need-to-retire/">how much do I need to retire guide</a> covers the withdrawal-rate approach. This page is general education, not a recommendation to buy any product.</p>
+<h2>Frequently asked questions</h2>
+<div class="faq">
+<details><summary>How much does a $100,000 annuity pay every month?</summary><p>As a fixed-period payout at an assumed 5% yearly rate, $100,000 pays about $659.96 a month for 20 years or $536.82 a month for 30 years. A lifetime annuity from an insurer would be priced differently, using your age and the contract terms, so ask for a quote to compare.</p></details>
+<details><summary>How much monthly income will a $400,000 annuity pay?</summary><p>At an assumed 5% rate, $400,000 pays about $2,639.82 a month over 20 years or $2,147.29 a month over 30 years, before tax. Actual contract payments depend on the insurer, fees and whether the income is for life or for a fixed period.</p></details>
+<details><summary>How much does a $300,000 annuity pay out per month?</summary><p>Over 20 years at an assumed 5% rate, $300,000 pays about $1,979.87 a month, $475,168 in total. At 3% it pays about $1,663.79, and over 30 years at 5% about $1,610.46. Insurer quotes for lifetime income will differ from these fixed-period figures.</p></details>
+<details><summary>How much does a $2 million annuity pay per month?</summary><p>At an assumed 5% yearly rate, $2,000,000 pays about $13,199.11 a month over 20 years or $10,736.43 a month over 30 years, before tax. With a sum this large, compare contract fees and the strength of the issuing insurer, since guarantees depend on it.</p></details>
+</div>
+<h2>Sources</h2>
+<ul class="sources">
+<li><a href="https://www.finra.org/investors/investing/investment-products/annuities" rel="nofollow noopener">FINRA — Annuities</a></li>
+</ul>
+<h2>Related tools</h2>
+<ul>
+<li><a href="/dividend-calculator/">Dividend Calculator</a></li>
+<li><a href="/savings-interest-calculator/">Savings Interest Calculator</a></li>
+<li><a href="/net-worth-calculator/">Net Worth Calculator</a></li>
+<li><a href="/dividend-reinvestment-calculator/">Dividend Reinvestment (DRIP) Calculator</a></li>
+<li><a href="/compound-interest-calculator/">Compound Interest Calculator</a></li>
+<li><a href="/inflation-calculator/">Inflation Calculator</a></li>
+<li><a href="/investment-calculator/">Investment Calculator</a></li>
+<li><a href="/retirement-calculator/">Retirement Calculator</a></li>
+</ul>
+<p class="disclaimer">Educational calculators, not investment advice. Results depend on your assumptions; past returns do not guarantee future results.</p>
+</div></main>
+<footer class="site"><div class="wrap">
+<p><a href="/compound-interest-calculator/">Compound Interest Calculator</a> <a href="/inflation-calculator/">Inflation Calculator</a> <a href="/investment-calculator/">Investment Calculator</a> <a href="/retirement-calculator/">Retirement Calculator</a> <a href="/401k-calculator/">401(k) Calculator</a> <a href="/roth-ira-calculator/">Roth IRA Calculator</a> <a href="/">All tools</a></p>
+<p><a href="/about/">About</a><a href="/methodology/">Methodology</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></p>
+<p>Educational calculators, not investment advice. Results depend on your assumptions; past returns do not guarantee future results.</p>
+<p>© <span id="y"></span> Fire Math Calc</p>
+</div></footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>

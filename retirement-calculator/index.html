@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Retirement Calculator: Are You Saving Enough?</title>
+<meta name="description" content="Compare what your savings could grow to by retirement with what your spending will need, after Social Security or a pension.">
+<link rel="canonical" href="https://firemathcalc.com/retirement-calculator/">
+<meta property="og:title" content="Retirement Calculator: Are You Saving Enough?">
+<meta property="og:description" content="Compare what your savings could grow to by retirement with what your spending will need, after Social Security or a pension.">
+<meta property="og:url" content="https://firemathcalc.com/retirement-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://firemathcalc.com/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://firemathcalc.com/assets/og-image.png">
+<link rel="stylesheet" href="/assets/site.css">
+<link rel="icon" type="image/png" href="/assets/favicon.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<style>:root{--brand:#047857;--font:Georgia, "Times New Roman", serif}</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://firemathcalc.com/#org","name":"Fire Math Calc","url":"https://firemathcalc.com/","description":"Fire Math Calc is a free set of early-retirement calculators that show the formula behind every result."},{"@type":"WebApplication","name":"Retirement Calculator","url":"https://firemathcalc.com/retirement-calculator/","description":"Compare what your savings could grow to by retirement with what your spending will need, after Social Security or a pension.","applicationCategory":"FinanceApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@id":"https://firemathcalc.com/#org"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Fire Math Calc","item":"https://firemathcalc.com/"},{"@type":"ListItem","position":2,"name":"Retirement Calculator","item":"https://firemathcalc.com/retirement-calculator/"}]}]}</script>
+
+<script src="/assets/cpi-data.js" defer></script>
+<script src="/assets/calculator.js" defer></script>
+<script src="/assets/calc-core.js" defer></script>
+</head>
+<body>
+<header class="site"><div class="wrap"><a class="logo" href="/"><img src="/assets/logo.png" alt="Fire Math Calc" width="44" height="34"></a><nav class="site"><a href="/compound-interest-calculator/">Compound Interest</a><a href="/inflation-calculator/">Inflation</a><a href="/investment-calculator/">Investment</a><a href="/retirement-calculator/">Retirement</a></nav></div></header>
+<main><div class="wrap">
+<nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Fire Math Calc</a> › Retirement Calculator</nav>
+<h1>Retirement Calculator</h1>
+<p class="answer">This <strong>retirement calculator</strong> compares what your savings could grow to with what your retirement will cost after Social Security or a pension. With the defaults ($50,000 saved at 35, $1,000 a month, 6% before retirement), you would have about $1,305,644 at 65. Funding a $40,000 yearly gap for 25 years at 4% needs $624,883.</p>
+<p class="updated">Updated <time datetime="2026-09-20">September 20, 2026</time> · By <a href="/about/">Fire Math Calc</a></p>
+<div id="calculator" data-calc="retirement"><noscript>This tool needs JavaScript turned on.</noscript></div>
+<div class="ad-slot"><!-- Ad slot 1 (below the tool). Empty until the ad network is approved; reserve its height in CSS first. --></div>
+<h2>How much do I need saved to retire?</h2>
+<p>You need enough to cover the gap between your yearly spending and your other income, for as many years as you expect retirement to last. The calculator computes that as a lump sum: <strong>needed = gap × [1 − (1 + r)^−years] ÷ r</strong>, where r is the return you assume during retirement. This is the present value of an annuity, with each withdrawal taken at the end of a year.</p><p>With the defaults:</p><ul><li>Spending $60,000 a year, minus $20,000 of Social Security or pension income, leaves a $40,000 gap.</li><li>Funding that gap for 25 years at an assumed 4% return needs <strong>$624,883</strong>.</li><li>On the savings side, $50,000 plus $1,000 a month for 30 years at an assumed 6%, compounded monthly, grows to <strong>$1,305,644</strong>.</li><li>That is a surplus of about $680,761 on these assumptions.</li></ul><p>The calculator plans for the money to run out at the end of the period you choose. If you want the savings to last indefinitely, or to leave an estate, a withdrawal-rate approach gives a larger target. At a 4% first-year withdrawal, a $40,000 gap needs $1,000,000. The <a href="/how-much-do-i-need-to-retire/">how much do I need to retire guide</a> explains that approach and the research behind it.</p><p>Choose your years in retirement with care. The Trinity study authors point out that you have a 50% chance of outliving your actuarial life expectancy. They suggest planning conservatively and adding a few years.</p>
+<h2>How does Social Security change the number?</h2>
+<p>Social Security reduces the gap your savings must fill, and that lowers the lump sum you need. In the default example, $20,000 a year of other income cuts the savings needed from $937,325 to $624,883, a reduction of $312,442. Every dollar of reliable yearly income has a large effect on the total.</p><p>Enter your own estimate in the “Social Security, pension or other income” box. Your Social Security statement at ssa.gov shows your estimate, and it is more useful than a national average.</p><p>The calculator treats that income as steady for the whole retirement and starts it on day one. If your benefit starts later than your retirement date, your savings must cover the full spending until it begins. One way to handle that is to run the calculator twice. First, model the bridge years with no other income. Then model the rest of retirement with the benefit included, and add the two lump sums together, remembering that the second amount is needed later.</p><p>A pension that is not adjusted for inflation loses buying power over time. If you use a return after inflation in the calculator, consider entering a slightly lower figure for a fixed pension to reflect that.</p><p>If you are self-employed or expect part-time income early in retirement, include it in the same box for the years it applies, using the two-step method above.</p>
+<h2>What return should I assume?</h2>
+<p>No one knows future returns, so the rate is always your assumption. The calculator asks for two: one before retirement and one during retirement. If you expect to invest more cautiously once withdrawals start, you might test a lower rate for that phase. Testing a low, middle and high rate is more useful than relying on one figure.</p><p>The result is sensitive to both rates. With the defaults:</p><ul><li>Cutting the pre-retirement return from 6% to 4% lowers savings at 65 from $1,305,644 to about $859,724.</li><li>Cutting the retirement return from 4% to 2% raises the amount needed from $624,883 to about $780,938.</li></ul><p>Decide whether you are using nominal or real returns, and stay consistent. If you enter returns after inflation, all results are in today’s dollars, and your spending figure can stay at today’s prices. If you enter nominal returns, your spending should rise with inflation, which this calculator does not do automatically. The <a href="/inflation-calculator/">inflation calculator</a> shows how much prices have risen over past periods, using BLS data.</p><p>Historical studies can help you choose a range. The 1998 Trinity study by Cooley, Hubbard and Walz, published in the <a href="https://www.aaii.com/journal/199802/feature.pdf" rel="nofollow noopener"><em>AAII Journal</em></a>, notes that large-company stocks and long-term corporate bonds compounded at roughly 10.5% and 5.7% a year from 1926 to 1995. It also warns that averages hide the short-term swings that matter most once withdrawals begin. Those are historical nominal figures, not a forecast.</p>
+<h2>What if I am short?</h2>
+<p>If the calculator shows a shortfall, you have four main levers: save more, retire later, spend less in retirement, or add other income. Each one changes a different input, so you can test them one at a time and see which closes the gap with the least strain. A combination of small changes often works better than one large one.</p><p>For example, with the defaults, working two more years (retiring at 67 instead of 65) makes a large difference on both sides:</p><ul><li>Savings grow to about $1,497,101.</li><li>The retirement period falls from 25 to 23 years, so the amount needed drops to about $594,274.</li></ul><p>Other ideas to test:</p><ul><li><strong>Raise your monthly saving</strong> and watch the savings figure respond. A workplace match can add to what you put in; the <a href="/401k-calculator/">401(k) calculator</a> models it with the 2026 IRS limits.</li><li><strong>Trim planned spending.</strong> Every $1,000 less a year lowers the lump sum needed.</li><li><strong>Add part-time income</strong> for the early years, using the two-step method in the Social Security section.</li></ul><p>William Bengen’s <a href="https://www.financialplanningassociation.org/sites/default/files/2021-04/MAR04%20Determining%20Withdrawal%20Rates%20Using%20Historical%20Data.pdf" rel="nofollow noopener">1994 study</a> found that even a modest cut in withdrawals after a bad early market left a retiree noticeably better off years later. In his 1929 example, a 5% reduction led to 20% more wealth by 1949.</p><p>This calculator gives estimates before taxes. It is general education, not personal financial advice.</p>
+<h2>Frequently asked questions</h2>
+<div class="faq">
+<details><summary>How much do you need to retire at 55 on a $100,000 income?</summary><p>Your income matters less than your spending. Suppose you plan to spend $80,000 a year with no other income until later. At a 4% withdrawal rate, that needs about $2,000,000. Funding it for 35 years at an assumed 4% return, with the money running out at the end, needs about $1,493,169. Social Security later would lower both figures.</p></details>
+<details><summary>Which retirement calculator is the most accurate?</summary><p>No calculator can be accurate about the future, because returns, inflation and your lifespan are unknown. Look for one that shows its formulas, labels returns as assumptions, lets you subtract Social Security, and says whether its figures are in today’s dollars. This one lists every formula on its methodology page. Re-run it each year with real numbers.</p></details>
+<details><summary>Can I retire at 62 with $400,000 in my 401(k)?</summary><p>It depends on your spending and other income. At a 4% first-year rate, $400,000 supports about $16,000 a year. At an assumed 3% return after inflation, withdrawing $24,000 a year lasts about 23 years, and $30,000 a year about 17 years. Social Security and taxes change the picture, so enter your own figures.</p></details>
+<details><summary>Does this retirement calculator include taxes?</summary><p>No. Savings, spending and the amount needed are all before tax. The IRS taxes withdrawals of deductible contributions and earnings from a traditional IRA, while qualified Roth withdrawals are tax-free. To allow for tax, raise your spending figure by the tax you expect to pay on withdrawals.</p></details>
+</div>
+<h2>Sources</h2>
+<ul class="sources">
+<li><a href="https://www.aaii.com/journal/199802/feature.pdf" rel="nofollow noopener">AAII Journal — Cooley, Hubbard and Walz, “Retirement Savings: Choosing a Withdrawal Rate That Is Sustainable,” February 1998</a></li>
+<li><a href="https://www.financialplanningassociation.org/sites/default/files/2021-04/MAR04%20Determining%20Withdrawal%20Rates%20Using%20Historical%20Data.pdf" rel="nofollow noopener">Journal of Financial Planning (FPA reprint) — William P. Bengen, “Determining Withdrawal Rates Using Historical Data,” October 1994</a></li>
+<li><a href="https://www.irs.gov/retirement-plans/traditional-and-roth-iras" rel="nofollow noopener">IRS — Traditional and Roth IRAs</a></li>
+</ul>
+<h2>Related tools</h2>
+<ul>
+<li><a href="/roth-ira-calculator/">Roth IRA Calculator</a></li>
+<li><a href="/401k-calculator/">401(k) Calculator</a></li>
+<li><a href="/compound-interest-calculator/">Compound Interest Calculator</a></li>
+<li><a href="/inflation-calculator/">Inflation Calculator</a></li>
+<li><a href="/investment-calculator/">Investment Calculator</a></li>
+<li><a href="/savings-interest-calculator/">Savings Interest Calculator</a></li>
+<li><a href="/annuity-calculator/">Annuity Calculator</a></li>
+<li><a href="/net-worth-calculator/">Net Worth Calculator</a></li>
+</ul>
+<p class="disclaimer">Educational calculators, not investment advice. Results depend on your assumptions; past returns do not guarantee future results.</p>
+</div></main>
+<footer class="site"><div class="wrap">
+<p><a href="/compound-interest-calculator/">Compound Interest Calculator</a> <a href="/inflation-calculator/">Inflation Calculator</a> <a href="/investment-calculator/">Investment Calculator</a> <a href="/retirement-calculator/">Retirement Calculator</a> <a href="/401k-calculator/">401(k) Calculator</a> <a href="/roth-ira-calculator/">Roth IRA Calculator</a> <a href="/">All tools</a></p>
+<p><a href="/about/">About</a><a href="/methodology/">Methodology</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></p>
+<p>Educational calculators, not investment advice. Results depend on your assumptions; past returns do not guarantee future results.</p>
+<p>© <span id="y"></span> Fire Math Calc</p>
+</div></footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>

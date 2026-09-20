@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inflation Calculator: Dollar Value Over Time (BLS CPI)</title>
+<meta name="description" content="See what a dollar amount from any year since 1913 is worth today, using official Bureau of Labor Statistics CPI data, with the math shown.">
+<link rel="canonical" href="https://firemathcalc.com/inflation-calculator/">
+<meta property="og:title" content="Inflation Calculator: Dollar Value Over Time (BLS CPI)">
+<meta property="og:description" content="See what a dollar amount from any year since 1913 is worth today, using official Bureau of Labor Statistics CPI data, with the math shown.">
+<meta property="og:url" content="https://firemathcalc.com/inflation-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://firemathcalc.com/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://firemathcalc.com/assets/og-image.png">
+<link rel="stylesheet" href="/assets/site.css">
+<link rel="icon" type="image/png" href="/assets/favicon.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<style>:root{--brand:#047857;--font:Georgia, "Times New Roman", serif}</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://firemathcalc.com/#org","name":"Fire Math Calc","url":"https://firemathcalc.com/","description":"Fire Math Calc is a free set of early-retirement calculators that show the formula behind every result."},{"@type":"WebApplication","name":"Inflation Calculator","url":"https://firemathcalc.com/inflation-calculator/","description":"See what a dollar amount from any year since 1913 is worth today, using official Bureau of Labor Statistics CPI data, with the math shown.","applicationCategory":"FinanceApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@id":"https://firemathcalc.com/#org"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Fire Math Calc","item":"https://firemathcalc.com/"},{"@type":"ListItem","position":2,"name":"Inflation Calculator","item":"https://firemathcalc.com/inflation-calculator/"}]}]}</script>
+
+<script src="/assets/cpi-data.js" defer></script>
+<script src="/assets/calculator.js" defer></script>
+<script src="/assets/calc-core.js" defer></script>
+</head>
+<body>
+<header class="site"><div class="wrap"><a class="logo" href="/"><img src="/assets/logo.png" alt="Fire Math Calc" width="44" height="34"></a><nav class="site"><a href="/compound-interest-calculator/">Compound Interest</a><a href="/inflation-calculator/">Inflation</a><a href="/investment-calculator/">Investment</a><a href="/retirement-calculator/">Retirement</a></nav></div></header>
+<main><div class="wrap">
+<nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Fire Math Calc</a> › Inflation Calculator</nav>
+<h1>Inflation Calculator</h1>
+<p class="answer">This <strong>inflation calculator</strong> uses the official Consumer Price Index (CPI-U) from the <a href="https://download.bls.gov/pub/time.series/cu/cu.data.1.AllItems" rel="nofollow noopener">Bureau of Labor Statistics</a>, downloaded September 16, 2026. By that index, $100 in 2000 had the same buying power as about $186.96 in 2025. Prices rose 86.96% in total, an average of 2.53% a year. Pick any year from 1913 on.</p>
+<p class="updated">Updated <time datetime="2026-09-20">September 20, 2026</time> · By <a href="/about/">Fire Math Calc</a></p>
+<div id="calculator" data-calc="inflation"><noscript>This tool needs JavaScript turned on.</noscript></div>
+<div class="ad-slot"><!-- Ad slot 1 (below the tool). Empty until the ad network is approved; reserve its height in CSS first. --></div>
+<h2>How much is $100 from a past year worth today?</h2>
+<p>Multiply the amount by the ratio of the two years’ CPI values: <strong>value today = amount × CPI (later year) ÷ CPI (earlier year)</strong>. Using BLS annual averages, $100 from 2000 equals about $186.96 in 2025 dollars. $100 from 1970 equals about $829.75. The table below uses the same data as the calculator.</p><div class="table-wrap"><table class="data"><thead><tr><th>$100 in</th><th>CPI-U annual average</th><th>Equals in 2025 dollars</th><th>Average inflation per year</th></tr></thead><tbody><tr><td>1913</td><td>9.9</td><td>$3,251.95</td><td>3.16%</td></tr><tr><td>1950</td><td>24.1</td><td>$1,335.86</td><td>3.52%</td></tr><tr><td>1970</td><td>38.8</td><td>$829.75</td><td>3.92%</td></tr><tr><td>1980</td><td>82.4</td><td>$390.71</td><td>3.08%</td></tr><tr><td>1990</td><td>130.7</td><td>$246.32</td><td>2.61%</td></tr><tr><td>2000</td><td>172.2</td><td>$186.96</td><td>2.53%</td></tr><tr><td>2010</td><td>218.056</td><td>$147.64</td><td>2.63%</td></tr><tr><td>2020</td><td>258.811</td><td>$124.39</td><td>4.46%</td></tr></tbody></table></div><p>The 2025 annual average CPI-U is 321.943. For 2026, a full-year average does not exist yet, so the calculator uses the latest month in the data, August 2026 (334.98). On that basis, $100 in 2025 equals about $104.05 in August 2026 prices, and $100 in 2000 equals about $194.53.</p><p>The same math works in reverse. Choose a later “from” year and an earlier “to” year to see what today’s money would have been worth in the past.</p><p>The CPI measures an average basket of goods and services. Your own costs may have risen faster or slower, depending on what you buy.</p>
+<h2>How is inflation calculated from the CPI?</h2>
+<p>Inflation between two dates is the percentage change in the CPI: <strong>(new index − old index) ÷ old index × 100</strong>. This is the method the <a href="https://www.bls.gov/cpi/questions-and-answers.htm" rel="nofollow noopener">BLS describes in its CPI questions and answers</a> (last modified September 25, 2025). From 2000 to 2025: (321.943 − 172.2) ÷ 172.2 × 100 = 86.96%.</p><p>The CPI tracks the average change over time in prices paid by consumers for a representative basket of goods and services. The index itself is not a price. Most CPI series use 1982–84 as the base period, set equal to 100. A value of 321.943 means prices were about 3.2 times their 1982–84 level.</p><p>This calculator uses the CPI-U series for all items, U.S. city average, not seasonally adjusted (series CUUR0000SA0). According to the BLS, CPI-U covers over 90% of the U.S. population. It leaves out rural, farm and institutional households.</p><p>For whole years, the calculator uses the BLS annual average. Annual averages smooth out the highs and lows of individual months, which makes year-to-year comparisons steadier.</p><p>To project future prices or discount future dollars, you choose an inflation rate yourself. The <a href="/investment-calculator/">investment calculator</a> can show a projected balance in today’s dollars, using an inflation assumption you enter.</p>
+<h2>What was the average inflation rate over my period?</h2>
+<p>The calculator reports the compound average yearly rate: <strong>(CPI later ÷ CPI earlier)^(1 ÷ years) − 1</strong>. From 2000 to 2025, prices rose 86.96% in total, which works out to about 2.53% a year compounded. A simple average of the yearly rates would give a different, less accurate figure for this purpose.</p><p>Individual years can differ widely from the average. Using the same BLS annual averages:</p><div class="table-wrap"><table class="data"><thead><tr><th>Year</th><th>Change in annual average CPI-U</th></tr></thead><tbody><tr><td>2020</td><td>1.23%</td></tr><tr><td>2021</td><td>4.70%</td></tr><tr><td>2022</td><td>8.00%</td></tr><tr><td>2023</td><td>4.12%</td></tr><tr><td>2024</td><td>2.95%</td></tr><tr><td>2025</td><td>2.63%</td></tr></tbody></table></div><p>The most recent BLS release, <a href="https://www.bls.gov/news.release/cpi.nr0.htm" rel="nofollow noopener">published September 11, 2026</a>, reports that CPI-U rose 3.4% over the 12 months to August 2026 before seasonal adjustment. The next release is scheduled for October 14, 2026, and this calculator’s data is refreshed after each monthly release.</p><p>A starting year in a high-inflation period raises the average for the whole span. A starting point just before a spike can make recent inflation look high. Try several start years to see how sensitive the average is.</p>
+<h2>Why does the CPI change month to month?</h2>
+<p>Prices move every month as the costs of individual items rise and fall, and some of that movement follows a regular seasonal pattern. The not-seasonally-adjusted index used here includes those swings, so it can even dip from one month to the next. In the 2026 data it fell from 335.123 in May to 333.952 in June, then rose to 334.98 by August.</p><p>The BLS also publishes a seasonally adjusted CPI, which removes normal seasonal patterns so the underlying trend is easier to see. It recalculates the seasonal factors each year with the January release and revises the previous five years of adjusted data, according to its <a href="https://www.bls.gov/cpi/seasonal-adjustment/" rel="nofollow noopener">seasonal adjustment notes</a> (updated March 13, 2026). This calculator uses the unadjusted figures, and the BLS recommends unadjusted indexes for escalation agreements such as contracts.</p><p>Month-to-month changes in the news are usually seasonally adjusted. The August 2026 release reported a 0.4% seasonally adjusted rise, after 0.1% in July, with gasoline the main driver. The same release gives its 3.4% 12-month change on an unadjusted basis.</p><p>For long comparisons, these monthly movements hardly matter. For a year still in progress, keep in mind that the latest month is a snapshot that can move either way. See the <a href="/methodology/">methodology page</a> for how and when the data is updated.</p>
+<h2>Frequently asked questions</h2>
+<div class="faq">
+<details><summary>What data does this inflation calculator use?</summary><p>It uses the Bureau of Labor Statistics CPI-U for all items, U.S. city average, not seasonally adjusted (series CUUR0000SA0). It covers annual averages from 1913 to 2025, plus the monthly values published so far in 2026, through August. The data was downloaded from download.bls.gov on September 16, 2026, and is refreshed after each monthly CPI release.</p></details>
+<details><summary>How do I calculate inflation between two years?</summary><p>Subtract the earlier year’s CPI from the later year’s, divide by the earlier value and multiply by 100. For 2000 (172.2) to 2025 (321.943), that gives 86.96%. To convert a dollar amount, multiply it by the later CPI and divide by the earlier CPI.</p></details>
+<details><summary>Why is the 2026 figure different from a full-year number?</summary><p>A 2026 annual average does not exist until all twelve months are published. Until then, the calculator uses the most recent month available, August 2026, with a CPI-U value of 334.98. The result is labeled as the latest month so you know it is a partial-year comparison that may change.</p></details>
+<details><summary>Does the CPI match my own cost of living?</summary><p>Not exactly. The CPI tracks prices for an average basket of goods and services bought by urban consumers. If a larger share of your budget goes to items whose prices rose faster than average, your personal inflation rate may be higher. If more goes to items that rose slowly, it may be lower.</p></details>
+</div>
+<h2>Sources</h2>
+<ul class="sources">
+<li><a href="https://download.bls.gov/pub/time.series/cu/cu.data.1.AllItems" rel="nofollow noopener">U.S. Bureau of Labor Statistics — CPI-U all items, U.S. city average, NSA (CUUR0000SA0), data file cu.data.1.AllItems, downloaded September 16, 2026</a></li>
+<li><a href="https://www.bls.gov/cpi/questions-and-answers.htm" rel="nofollow noopener">U.S. Bureau of Labor Statistics — Consumer Price Index: Questions and Answers</a></li>
+<li><a href="https://www.bls.gov/cpi/seasonal-adjustment/" rel="nofollow noopener">U.S. Bureau of Labor Statistics — CPI seasonal adjustment</a></li>
+<li><a href="https://www.bls.gov/news.release/cpi.nr0.htm" rel="nofollow noopener">U.S. Bureau of Labor Statistics — Consumer Price Index news release, August 2026 (published September 11, 2026)</a></li>
+</ul>
+<h2>Related tools</h2>
+<ul>
+<li><a href="/compound-interest-calculator/">Compound Interest Calculator</a></li>
+<li><a href="/investment-calculator/">Investment Calculator</a></li>
+<li><a href="/cagr-calculator/">CAGR Calculator</a></li>
+<li><a href="/roi-calculator/">ROI Calculator</a></li>
+<li><a href="/rule-of-72-calculator/">Rule of 72 Calculator</a></li>
+<li><a href="/retirement-calculator/">Retirement Calculator</a></li>
+<li><a href="/401k-calculator/">401(k) Calculator</a></li>
+<li><a href="/roth-ira-calculator/">Roth IRA Calculator</a></li>
+</ul>
+<p class="disclaimer">Educational calculators, not investment advice. Results depend on your assumptions; past returns do not guarantee future results.</p>
+</div></main>
+<footer class="site"><div class="wrap">
+<p><a href="/compound-interest-calculator/">Compound Interest Calculator</a> <a href="/inflation-calculator/">Inflation Calculator</a> <a href="/investment-calculator/">Investment Calculator</a> <a href="/retirement-calculator/">Retirement Calculator</a> <a href="/401k-calculator/">401(k) Calculator</a> <a href="/roth-ira-calculator/">Roth IRA Calculator</a> <a href="/">All tools</a></p>
+<p><a href="/about/">About</a><a href="/methodology/">Methodology</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></p>
+<p>Educational calculators, not investment advice. Results depend on your assumptions; past returns do not guarantee future results.</p>
+<p>© <span id="y"></span> Fire Math Calc</p>
+</div></footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>

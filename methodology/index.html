@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How Fire Math Calc Gets Its Numbers</title>
+<meta name="description" content="The formulas, data sources and refresh schedule behind every Fire Math Calc tool.">
+<link rel="canonical" href="https://firemathcalc.com/methodology/">
+<meta property="og:title" content="How Fire Math Calc Gets Its Numbers">
+<meta property="og:description" content="The formulas, data sources and refresh schedule behind every Fire Math Calc tool.">
+<meta property="og:url" content="https://firemathcalc.com/methodology/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://firemathcalc.com/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://firemathcalc.com/assets/og-image.png">
+<link rel="stylesheet" href="/assets/site.css">
+<link rel="icon" type="image/png" href="/assets/favicon.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<style>:root{--brand:#047857;--font:Georgia, "Times New Roman", serif}</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://firemathcalc.com/#org","name":"Fire Math Calc","url":"https://firemathcalc.com/","description":"Fire Math Calc is a free set of early-retirement calculators that show the formula behind every result."}]}</script>
+
+
+</head>
+<body>
+<header class="site"><div class="wrap"><a class="logo" href="/"><img src="/assets/logo.png" alt="Fire Math Calc" width="44" height="34"></a><nav class="site"><a href="/compound-interest-calculator/">Compound Interest</a><a href="/inflation-calculator/">Inflation</a><a href="/investment-calculator/">Investment</a><a href="/retirement-calculator/">Retirement</a></nav></div></header>
+<main><div class="wrap">
+<h1>Methodology</h1>
+<p>This page explains how each calculator works, as implemented in the site’s code, and where its data comes from. All math is deterministic: the same inputs always give the same outputs. Returns, withdrawal rates, growth rates and future inflation are inputs you choose, and each is labeled on the page as your assumption. No calculator predicts markets, and nothing here is investment, tax or legal advice.</p><h3>Data sources</h3><ul><li><strong>Consumer prices:</strong> U.S. Bureau of Labor Statistics, CPI-U, all items, U.S. city average, not seasonally adjusted (series CUUR0000SA0). The data covers annual averages from 1913 to 2025 (the BLS annual period) and the monthly values for 2026 published so far, January through August. It was downloaded from the BLS time-series file on September 16, 2026.</li><li><strong>Contribution limits:</strong> IRS news release IR-2025-111, November 13, 2025. For 2026: 401(k) deferral limit $24,500; catch-up at 50 or older $8,000; catch-up at ages 60 to 63 $11,250; IRA limit $7,500; IRA catch-up at 50 or older $1,100. Roth IRA phase-out ranges: $153,000–$168,000 (single and head of household), $242,000–$252,000 (married filing jointly) and $0–$10,000 (married filing separately). Checked against the IRS page on September 16, 2026.</li><li><strong>Withdrawal-rate research,</strong> cited in the text only: Bengen, <em>Journal of Financial Planning</em>, October 1994; Cooley, Hubbard and Walz, <em>AAII Journal</em>, February 1998.</li></ul><h3>Refresh schedule</h3><p>CPI data is updated after each monthly BLS CPI release. The next is scheduled for October 14, 2026. IRS contribution limits are reviewed each November, when the IRS announces the following year’s figures. Until then, projections hold future years at 2026 limits.</p><h3>Formulas</h3><ul><li><strong>FIRE:</strong> FIRE number = yearly spending ÷ withdrawal rate. Years to FI: each year, balance = balance × (1 + real return) + yearly investment. The crossing year is interpolated in a straight line. If the balance stops growing, or the target is not reached within 100 years, the tool reports “Not reached.”</li><li><strong>Coast FIRE:</strong> Coast number = FIRE number ÷ (1 + real return)^(retirement age − current age).</li><li><strong>Compound interest and investment:</strong> FV = P(1 + i)^n + PMT × [(1 + i)^n − 1] ÷ i, with i = yearly rate ÷ 12, n = months, and deposits at month end. The investment tool’s today’s-dollar figure = FV ÷ (1 + inflation)^years.</li><li><strong>Dividend:</strong> income = portfolio × yield. Future income = income × (1 + dividend growth)^years. The portfolio value is held constant, and dividends are not reinvested.</li><li><strong>Inflation:</strong> value = amount × CPI(to) ÷ CPI(from). Cumulative change = CPI(to) ÷ CPI(from) − 1. Average yearly rate = (CPI(to) ÷ CPI(from))^(1 ÷ years) − 1. Full years use annual averages. For 2026, the latest published month is used and labeled.</li><li><strong>Retirement:</strong> savings at retirement uses the monthly future-value formula above. Needed = gap × [1 − (1 + r)^−years] ÷ r, where gap = spending − other income, r = return during retirement, and withdrawals are at year end.</li><li><strong>401(k):</strong> each year, your contribution = min(salary × your %, IRS limit for your age that year). Match = salary × min(your %, match cap %) × match rate. Balance = balance × (1 + return) + contribution + match. Salary can grow by your assumed raise.</li><li><strong>Roth IRA:</strong> limit = $7,500, or $8,600 at 50 or older. Inside the phase-out, allowed = limit × (top of range − MAGI) ÷ (top − bottom). This straight-line estimate does not apply the IRS rounding and $200 minimum in Publication 590-A, Worksheet 2-2. Balance grows yearly, with contributions at year end.</li><li><strong>Savings (APY):</strong> monthly rate = (1 + APY)^(1/12) − 1, compounded monthly with deposits at month end.</li><li><strong>Annuity:</strong> payout = P × r ÷ [1 − (1 + r)^−n]. Growth = PMT × [(1 + r)^n − 1] ÷ r, where r = yearly rate ÷ payments per year and payments are at period end.</li><li><strong>Net worth:</strong> sum of assets − sum of debts.</li><li><strong>CAGR:</strong> (ending ÷ starting)^(1 ÷ years) − 1.</li><li><strong>ROI:</strong> (returned − invested) ÷ invested. Annualized = (returned ÷ invested)^(1 ÷ years) − 1.</li><li><strong>Rule of 72:</strong> estimate = 72 ÷ rate. Exact = ln 2 ÷ ln(1 + rate).</li><li><strong>Dividend reinvestment:</strong> once a year, dividend = shares × price × yield. The price then grows by the assumed rate, and the dividend buys dividend ÷ new price shares. The yield is adjusted so dividends per share grow at the assumed dividend growth rate.</li></ul><h3>What the tools leave out</h3><p>Unless stated otherwise, results are before taxes and fees. They use a steady return rather than a real sequence of good and bad years, and they do not model account rules such as early-withdrawal taxes. Each tool is tested against worked examples computed independently, and the tests are re-run after every change. Questions or corrections are welcome. See the <a href="/about/">about page</a>.</p>
+<h2>Sources</h2>
+<ul class="sources">
+<li><a href="https://download.bls.gov/pub/time.series/cu/cu.data.1.AllItems" rel="nofollow noopener">U.S. Bureau of Labor Statistics — CPI-U time-series data file cu.data.1.AllItems (downloaded September 16, 2026)</a></li>
+<li><a href="https://www.bls.gov/news.release/cpi.nr0.htm" rel="nofollow noopener">U.S. Bureau of Labor Statistics — Consumer Price Index news release, August 2026 (published September 11, 2026)</a></li>
+<li><a href="https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500" rel="nofollow noopener">IRS newsroom — 401(k) limit increases to $24,500 for 2026, IRA limit increases to $7,500 (IR-2025-111, November 13, 2025)</a></li>
+<li><a href="https://www.irs.gov/publications/p590a" rel="nofollow noopener">IRS — Publication 590-A, Contributions to Individual Retirement Arrangements (IRAs)</a></li>
+<li><a href="https://www.financialplanningassociation.org/sites/default/files/2021-04/MAR04%20Determining%20Withdrawal%20Rates%20Using%20Historical%20Data.pdf" rel="nofollow noopener">Journal of Financial Planning (FPA reprint) — William P. Bengen, “Determining Withdrawal Rates Using Historical Data,” October 1994</a></li>
+<li><a href="https://www.aaii.com/journal/199802/feature.pdf" rel="nofollow noopener">AAII Journal — Cooley, Hubbard and Walz, “Retirement Savings: Choosing a Withdrawal Rate That Is Sustainable,” February 1998</a></li>
+</ul>
+</div></main>
+<footer class="site"><div class="wrap">
+<p><a href="/compound-interest-calculator/">Compound Interest Calculator</a> <a href="/inflation-calculator/">Inflation Calculator</a> <a href="/investment-calculator/">Investment Calculator</a> <a href="/retirement-calculator/">Retirement Calculator</a> <a href="/401k-calculator/">401(k) Calculator</a> <a href="/roth-ira-calculator/">Roth IRA Calculator</a> <a href="/">All tools</a></p>
+<p><a href="/about/">About</a><a href="/methodology/">Methodology</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></p>
+<p>Educational calculators, not investment advice. Results depend on your assumptions; past returns do not guarantee future results.</p>
+<p>© <span id="y"></span> Fire Math Calc</p>
+</div></footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>High-Yield Savings Calculator: Interest by APY</title>
+<meta name="description" content="Calculate the interest a high-yield savings account or CD earns from its APY, with an opening deposit and monthly additions.">
+<link rel="canonical" href="https://firemathcalc.com/savings-interest-calculator/">
+<meta property="og:title" content="High-Yield Savings Calculator: Interest by APY">
+<meta property="og:description" content="Calculate the interest a high-yield savings account or CD earns from its APY, with an opening deposit and monthly additions.">
+<meta property="og:url" content="https://firemathcalc.com/savings-interest-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://firemathcalc.com/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://firemathcalc.com/assets/og-image.png">
+<link rel="stylesheet" href="/assets/site.css">
+<link rel="icon" type="image/png" href="/assets/favicon.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<style>:root{--brand:#047857;--font:Georgia, "Times New Roman", serif}</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://firemathcalc.com/#org","name":"Fire Math Calc","url":"https://firemathcalc.com/","description":"Fire Math Calc is a free set of early-retirement calculators that show the formula behind every result."},{"@type":"WebApplication","name":"Savings Interest Calculator","url":"https://firemathcalc.com/savings-interest-calculator/","description":"Calculate the interest a high-yield savings account or CD earns from its APY, with an opening deposit and monthly additions.","applicationCategory":"FinanceApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@id":"https://firemathcalc.com/#org"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Fire Math Calc","item":"https://firemathcalc.com/"},{"@type":"ListItem","position":2,"name":"Savings Interest Calculator","item":"https://firemathcalc.com/savings-interest-calculator/"}]}]}</script>
+
+<script src="/assets/cpi-data.js" defer></script>
+<script src="/assets/calculator.js" defer></script>
+<script src="/assets/calc-core.js" defer></script>
+</head>
+<body>
+<header class="site"><div class="wrap"><a class="logo" href="/"><img src="/assets/logo.png" alt="Fire Math Calc" width="44" height="34"></a><nav class="site"><a href="/compound-interest-calculator/">Compound Interest</a><a href="/inflation-calculator/">Inflation</a><a href="/investment-calculator/">Investment</a><a href="/retirement-calculator/">Retirement</a></nav></div></header>
+<main><div class="wrap">
+<nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Fire Math Calc</a> › Savings Interest Calculator</nav>
+<h1>Savings Interest Calculator</h1>
+<p class="answer">This <strong>high yield savings account calculator</strong> turns your bank’s APY into a balance. $5,000 plus $200 a month at 4.5% APY grows to $19,629.26 in 5 years, including $2,629.26 of interest. For comparison, the <a href="https://www.fdic.gov/national-rates-and-rate-caps" rel="nofollow noopener">FDIC national average savings rate</a> was 0.38% as of August 17, 2026.</p>
+<p class="updated">Updated <time datetime="2026-09-20">September 20, 2026</time> · By <a href="/about/">Fire Math Calc</a></p>
+<div id="calculator" data-calc="savings"><noscript>This tool needs JavaScript turned on.</noscript></div>
+<div class="ad-slot"><!-- Ad slot 1 (below the tool). Empty until the ad network is approved; reserve its height in CSS first. --></div>
+<h2>How much interest will my savings earn?</h2>
+<p>Enter the APY your bank quotes, your opening deposit, your monthly deposit and the number of years. The calculator converts the APY to a monthly rate, <strong>(1 + APY)^(1/12) − 1</strong>, then compounds your balance monthly, with each deposit added at the end of its month. The result shows your balance, the interest earned and the total you deposited.</p><p>Here is the default example at two rates, both for 5 years:</p><div class="table-wrap"><table class="data"><thead><tr><th>APY</th><th>Balance after 5 years</th><th>Interest earned</th></tr></thead><tbody><tr><td>4.5% (sample high-yield rate)</td><td>$19,629.26</td><td>$2,629.26</td></tr><tr><td>0.38% (FDIC national average, August 17, 2026)</td><td>$17,208.32</td><td>$208.32</td></tr></tbody></table></div><p>In both cases you deposit $17,000 ($5,000 plus 60 × $200). The FDIC figure is a weighted average of the rates insured banks and credit unions pay, based on the $2,500 product tier.</p><p>Savings rates can change, so a 5-year projection assumes today’s rate holds the whole time. The 4.5% rate is a sample, not an offer from any bank. Enter the rate on your own account.</p><p>Interest is generally taxable, and the calculator shows it before tax. If you plan to invest rather than save, the <a href="/investment-calculator/">investment calculator</a> uses the same kind of projection with a return you assume.</p>
+<h2>What is the difference between APY and APR?</h2>
+<p>APY, or annual percentage yield, is the yearly return on a deposit including the effect of compounding. Its calculation is set by federal rules, so it compares fairly across banks. APR describes a yearly rate on borrowing. For loans, the <a href="https://www.consumerfinance.gov/ask-cfpb/what-is-the-difference-between-a-mortgage-interest-rate-and-an-apr-en-135/" rel="nofollow noopener">CFPB explains</a> that APR includes the interest rate plus points and certain fees. For comparing savings accounts, APY is the number to use.</p><p>Under <a href="https://www.consumerfinance.gov/rules-policy/regulations/1030/a/" rel="nofollow noopener">Regulation DD, Appendix A</a>, the APY measures the total interest paid based on the interest rate and how often it compounds. For accounts with no maturity date, such as savings accounts, the calculation assumes a 365-day term.</p><p>Because compounding is already built in, an APY should not be compounded again. That is why this calculator converts the APY to an equivalent monthly rate instead of dividing it by 12. For example, a stated 4.5% rate compounded monthly works out to an APY of about 4.59%. Compounded daily, it is about 4.60%.</p><p>If an account quotes only an interest rate, ask for the APY so you can compare offers fairly. For general compound growth at a nominal rate, use the <a href="/compound-interest-calculator/">compound interest calculator</a>.</p>
+<h2>Savings account vs CD</h2>
+<p>A savings account keeps your money available, and its rate can change. A certificate of deposit (CD) commits your money for a set term, so the account’s disclosure matters: check whether the rate is fixed and what happens if you withdraw early. Which suits you depends mostly on whether you may need the cash before the term ends.</p><p>The FDIC national averages as of August 17, 2026 show how the products compare on average:</p><div class="table-wrap"><table class="data"><thead><tr><th>Product</th><th>FDIC national average rate</th></tr></thead><tbody><tr><td>Savings</td><td>0.38%</td></tr><tr><td>Money market</td><td>0.63%</td></tr><tr><td>12-month CD</td><td>1.71%</td></tr><tr><td>60-month CD</td><td>1.36%</td></tr></tbody></table></div><p>Individual banks may pay well above or below these averages. The money market and CD figures average the $10,000 and $100,000 product tiers.</p><p>To project a CD, enter its APY, set the monthly deposit to $0 and set the years to the CD’s term. The result assumes interest stays in the account and compounds. If your CD pays interest out to another account instead, the balance shown will be higher than you actually hold.</p><p>For a longer-term goal, the <a href="/rule-of-72-calculator/">rule of 72 calculator</a> shows roughly how long money takes to double at a given rate.</p>
+<h2>Frequently asked questions</h2>
+<div class="faq">
+<details><summary>How much will $10,000 make in a high-yield savings account?</summary><p>At 4% APY, $10,000 earns about $400 in one year if the rate holds and you add nothing. At the FDIC national average of 0.38% (August 17, 2026), it would earn about $38. Rates on savings accounts can change, and interest is generally taxable.</p></details>
+<details><summary>How much will $100,000 make in a high-yield savings account?</summary><p>At 4% APY, $100,000 earns about $4,000 in a year, or roughly $333 a month on average. At 0.38%, it earns about $380. Check the APY your bank pays today and remember the rate may change. The interest shown is before tax.</p></details>
+<details><summary>How much do I need in a high-yield savings account to make $1,000 a month?</summary><p>$1,000 a month is $12,000 a year. At 4% APY you would need about $300,000, and at 4.5% about $266,667. Those figures assume the rate stays the same and are before tax. If the bank lowers its rate, the income falls.</p></details>
+</div>
+<h2>Sources</h2>
+<ul class="sources">
+<li><a href="https://www.fdic.gov/national-rates-and-rate-caps" rel="nofollow noopener">FDIC — National Rates and Rate Caps (rates as of August 17, 2026)</a></li>
+<li><a href="https://www.consumerfinance.gov/rules-policy/regulations/1030/a/" rel="nofollow noopener">Consumer Financial Protection Bureau — Regulation DD, Appendix A to Part 1030: Annual Percentage Yield Calculation</a></li>
+<li><a href="https://www.consumerfinance.gov/ask-cfpb/what-is-the-difference-between-a-mortgage-interest-rate-and-an-apr-en-135/" rel="nofollow noopener">Consumer Financial Protection Bureau — What is the difference between a mortgage interest rate and an APR?</a></li>
+</ul>
+<h2>Related tools</h2>
+<ul>
+<li><a href="/dividend-calculator/">Dividend Calculator</a></li>
+<li><a href="/annuity-calculator/">Annuity Calculator</a></li>
+<li><a href="/net-worth-calculator/">Net Worth Calculator</a></li>
+<li><a href="/dividend-reinvestment-calculator/">Dividend Reinvestment (DRIP) Calculator</a></li>
+<li><a href="/compound-interest-calculator/">Compound Interest Calculator</a></li>
+<li><a href="/inflation-calculator/">Inflation Calculator</a></li>
+<li><a href="/investment-calculator/">Investment Calculator</a></li>
+<li><a href="/retirement-calculator/">Retirement Calculator</a></li>
+</ul>
+<p class="disclaimer">Educational calculators, not investment advice. Results depend on your assumptions; past returns do not guarantee future results.</p>
+</div></main>
+<footer class="site"><div class="wrap">
+<p><a href="/compound-interest-calculator/">Compound Interest Calculator</a> <a href="/inflation-calculator/">Inflation Calculator</a> <a href="/investment-calculator/">Investment Calculator</a> <a href="/retirement-calculator/">Retirement Calculator</a> <a href="/401k-calculator/">401(k) Calculator</a> <a href="/roth-ira-calculator/">Roth IRA Calculator</a> <a href="/">All tools</a></p>
+<p><a href="/about/">About</a><a href="/methodology/">Methodology</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></p>
+<p>Educational calculators, not investment advice. Results depend on your assumptions; past returns do not guarantee future results.</p>
+<p>© <span id="y"></span> Fire Math Calc</p>
+</div></footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>

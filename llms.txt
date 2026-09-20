@@ -1,0 +1,27 @@
+# Fire Math Calc
+
+> Fire Math Calc is a free set of early-retirement calculators that show the formula behind every result.
+
+## Tools
+- [FIRE Calculator](https://firemathcalc.com/fire-calculator/): Find your FIRE number and how many years it takes to reach it, with the formula shown. Change spending, savings, return and withdrawal rate.
+- [Coast FIRE Calculator](https://firemathcalc.com/coast-fire-calculator/): Coast FIRE is the savings that grow to your retirement number with no more contributions. Calculate yours and see how far you are from it.
+- [Compound Interest Calculator](https://firemathcalc.com/compound-interest-calculator/): See what monthly investing grows to with compound interest, year by year, and how much of the total is growth versus your own contributions.
+- [Dividend Calculator](https://firemathcalc.com/dividend-calculator/): Work out yearly and monthly dividend income from your portfolio and yield, and how that income grows if dividends rise over time.
+- [Inflation Calculator](https://firemathcalc.com/inflation-calculator/): See what a dollar amount from any year since 1913 is worth today, using official Bureau of Labor Statistics CPI data, with the math shown.
+- [Roth IRA Calculator](https://firemathcalc.com/roth-ira-calculator/): Project your tax-free Roth IRA balance and check your 2026 contribution limit against the IRS income phase-out for your filing status.
+- [401(k) Calculator](https://firemathcalc.com/401k-calculator/): Project your 401(k) balance at retirement with your contribution rate and employer match, capped at the 2026 IRS limits and catch-ups.
+- [Retirement Calculator](https://firemathcalc.com/retirement-calculator/): Compare what your savings could grow to by retirement with what your spending will need, after Social Security or a pension.
+- [Investment Calculator](https://firemathcalc.com/investment-calculator/): See how a starting amount and monthly investing could grow over time, in future dollars and in today’s dollars after inflation.
+- [Savings Interest Calculator](https://firemathcalc.com/savings-interest-calculator/): Calculate the interest a high-yield savings account or CD earns from its APY, with an opening deposit and monthly additions.
+- [Annuity Calculator](https://firemathcalc.com/annuity-calculator/): Work out the monthly payout a lump sum can provide over a fixed period, or what regular payments grow to, at the rate you enter.
+- [Net Worth Calculator](https://firemathcalc.com/net-worth-calculator/): List what you own and what you owe to see your net worth today, and track it over time to measure progress toward your goals.
+- [CAGR Calculator](https://firemathcalc.com/cagr-calculator/): Calculate the compound annual growth rate between a starting and ending value over any number of years, with the formula explained.
+- [ROI Calculator](https://firemathcalc.com/roi-calculator/): Work out the return on an investment as a total percentage and as an annualized rate, so investments held for different times compare fairly.
+- [Dividend Reinvestment (DRIP) Calculator](https://firemathcalc.com/dividend-reinvestment-calculator/): See how reinvesting dividends grows your share count and portfolio value year by year, compared with taking the dividends as cash.
+- [Rule of 72 Calculator](https://firemathcalc.com/rule-of-72-calculator/): Estimate how many years it takes money to double at a given rate with the rule of 72, and compare it with the exact figure.
+
+## Guides and data
+- [How Much Do I Need to Retire?](https://firemathcalc.com/how-much-do-i-need-to-retire/): Turn your yearly spending into a retirement target, see how the withdrawal rate changes it, and check your plan with the FIRE calculator.
+
+## Sources
+- See /methodology/

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Investment Calculator: Growth With Monthly Deposits</title>
+<meta name="description" content="See how a starting amount and monthly investing could grow over time, in future dollars and in today’s dollars after inflation.">
+<link rel="canonical" href="https://firemathcalc.com/investment-calculator/">
+<meta property="og:title" content="Investment Calculator: Growth With Monthly Deposits">
+<meta property="og:description" content="See how a starting amount and monthly investing could grow over time, in future dollars and in today’s dollars after inflation.">
+<meta property="og:url" content="https://firemathcalc.com/investment-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://firemathcalc.com/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://firemathcalc.com/assets/og-image.png">
+<link rel="stylesheet" href="/assets/site.css">
+<link rel="icon" type="image/png" href="/assets/favicon.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<style>:root{--brand:#047857;--font:Georgia, "Times New Roman", serif}</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://firemathcalc.com/#org","name":"Fire Math Calc","url":"https://firemathcalc.com/","description":"Fire Math Calc is a free set of early-retirement calculators that show the formula behind every result."},{"@type":"WebApplication","name":"Investment Calculator","url":"https://firemathcalc.com/investment-calculator/","description":"See how a starting amount and monthly investing could grow over time, in future dollars and in today’s dollars after inflation.","applicationCategory":"FinanceApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@id":"https://firemathcalc.com/#org"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Fire Math Calc","item":"https://firemathcalc.com/"},{"@type":"ListItem","position":2,"name":"Investment Calculator","item":"https://firemathcalc.com/investment-calculator/"}]}]}</script>
+
+<script src="/assets/cpi-data.js" defer></script>
+<script src="/assets/calculator.js" defer></script>
+<script src="/assets/calc-core.js" defer></script>
+</head>
+<body>
+<header class="site"><div class="wrap"><a class="logo" href="/"><img src="/assets/logo.png" alt="Fire Math Calc" width="44" height="34"></a><nav class="site"><a href="/compound-interest-calculator/">Compound Interest</a><a href="/inflation-calculator/">Inflation</a><a href="/investment-calculator/">Investment</a><a href="/retirement-calculator/">Retirement</a></nav></div></header>
+<main><div class="wrap">
+<nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Fire Math Calc</a> › Investment Calculator</nav>
+<h1>Investment Calculator</h1>
+<p class="answer">This <strong>investment calculator</strong> shows how a starting amount and monthly deposits could grow at a return you assume, compounded monthly. $10,000 plus $300 a month at 7% for 20 years reaches about $196,665. $82,000 of that is your money and $114,665 is growth. Add an inflation rate to see the result in today’s dollars.</p>
+<p class="updated">Updated <time datetime="2026-09-20">September 20, 2026</time> · By <a href="/about/">Fire Math Calc</a></p>
+<div id="calculator" data-calc="investment"><noscript>This tool needs JavaScript turned on.</noscript></div>
+<div class="ad-slot"><!-- Ad slot 1 (below the tool). Empty until the ad network is approved; reserve its height in CSS first. --></div>
+<h2>How much will my investment grow?</h2>
+<p>Growth depends on four inputs: your starting amount, what you add each month, the yearly return you assume and how long you stay invested. The calculator compounds monthly and adds each deposit at the end of its month, using the future-value formula <strong>FV = P(1 + i)^n + PMT × [(1 + i)^n − 1] ÷ i</strong>. Here i is the yearly rate ÷ 12 and n is the number of months.</p><p>With the default inputs ($10,000 to start, $300 a month, an assumed 7% return), the balance grows like this:</p><div class="table-wrap"><table class="data"><thead><tr><th>Years</th><th>You put in</th><th>Balance (7%, your assumption)</th></tr></thead><tbody><tr><td>10</td><td>$46,000</td><td>$72,022</td></tr><tr><td>20</td><td>$82,000</td><td>$196,665</td></tr><tr><td>30</td><td>$118,000</td><td>$447,156</td></tr></tbody></table></div><p>The gap between what you put in and the balance widens each decade, because growth compounds on earlier growth. That is the same effect the <a href="/compound-interest-calculator/">compound interest calculator</a> shows year by year.</p><p>The results leave out taxes and fees. A real portfolio would also move up and down rather than rising smoothly. The 7% default is only a starting point, not a prediction. Try a lower rate to see a more cautious outcome.</p><p>If you know an investment’s start and end values and want its growth rate, use the <a href="/cagr-calculator/">CAGR calculator</a>.</p>
+<h2>How do monthly contributions change the result?</h2>
+<p>Regular contributions often end up larger than the starting amount’s growth, because each deposit has its own time to compound. In the default example, the $10,000 alone would grow to about $40,387 in 20 years at 7%. The $300 monthly deposits alone would grow to about $156,278. Together they make $196,665.</p><p>A few points to keep in mind:</p><ul><li><strong>Timing:</strong> the calculator adds deposits at the end of each month. Deposits made at the start of the month would earn slightly more.</li><li><strong>Consistency:</strong> the formula assumes you never skip a month. Missed months reduce the result more than their face value, because they lose all their future growth.</li><li><strong>Increases:</strong> the calculator keeps the deposit flat. If you raise it over time, the real result would be higher than shown.</li></ul><p>Longer horizons make contributions more powerful. $300 a month for 30 years at the same assumed 7% contributes $108,000 on top of the $10,000 start, and the total balance reaches about $447,156.</p><p>If you are investing through a workplace plan with a match, the <a href="/401k-calculator/">401(k) calculator</a> adds that match and the 2026 IRS limits to the same kind of projection.</p>
+<h2>What does “in today’s dollars” mean?</h2>
+<p>“In today’s dollars” means the future balance adjusted for inflation, so you can compare it with prices now. Enter an inflation rate and the calculator divides the future value by (1 + inflation)^years. At an assumed 3% inflation, $196,665 in 20 years would buy about what $108,889 buys today.</p><p>This matters because a large future number can mislead. Prices rise over long periods. By the official Consumer Price Index from the <a href="https://download.bls.gov/pub/time.series/cu/cu.data.1.AllItems" rel="nofollow noopener">Bureau of Labor Statistics</a>, the 2025 annual average (321.943) was about 1.87 times the 2000 level (172.2). That is an average of about 2.53% a year over those 25 years.</p><p>The inflation rate you enter is your assumption. Here is how the default result changes:</p><div class="table-wrap"><table class="data"><thead><tr><th>Inflation (your assumption)</th><th>$196,665 in 20 years, in today’s dollars</th></tr></thead><tbody><tr><td>0% (default)</td><td>$196,665</td></tr><tr><td>2.5%</td><td>$120,019</td></tr><tr><td>3%</td><td>$108,889</td></tr></tbody></table></div><p>An alternative is to enter a return that is already after inflation, such as 7% minus 3%, and leave inflation at 0. The two methods give similar but not identical answers.</p><p>The <a href="/inflation-calculator/">inflation calculator</a> shows past price changes between any two years since 1913.</p>
+<h2>Frequently asked questions</h2>
+<div class="faq">
+<details><summary>How much will $10,000 be worth in 20 years?</summary><p>With no further deposits, $10,000 grows to about $40,387 in 20 years at an assumed 7% yearly return, compounded monthly. Adding $300 a month raises that to about $196,665. At an assumed 3% inflation, the larger figure would be worth about $108,889 in today’s money. Returns vary, so try other rates.</p></details>
+<details><summary>What return should I use in an investment calculator?</summary><p>Use a rate you consider realistic for your own mix of investments, and test a lower one as well. The rate is an assumption, and the calculator does not predict markets. If you want results in today’s money, either enter an inflation rate or use a return that already has inflation taken out.</p></details>
+<details><summary>Does the investment calculator include taxes and fees?</summary><p>No. It shows growth before taxes and fees. Fees reduce your return every year, and taxes may apply to dividends, gains or withdrawals depending on the account. To allow for fees roughly, lower your return by the yearly fee percentage you pay.</p></details>
+</div>
+<h2>Sources</h2>
+<ul class="sources">
+<li><a href="https://download.bls.gov/pub/time.series/cu/cu.data.1.AllItems" rel="nofollow noopener">U.S. Bureau of Labor Statistics — CPI-U all items, U.S. city average, NSA (CUUR0000SA0), downloaded September 16, 2026</a></li>
+</ul>
+<h2>Related tools</h2>
+<ul>
+<li><a href="/compound-interest-calculator/">Compound Interest Calculator</a></li>
+<li><a href="/inflation-calculator/">Inflation Calculator</a></li>
+<li><a href="/cagr-calculator/">CAGR Calculator</a></li>
+<li><a href="/roi-calculator/">ROI Calculator</a></li>
+<li><a href="/rule-of-72-calculator/">Rule of 72 Calculator</a></li>
+<li><a href="/retirement-calculator/">Retirement Calculator</a></li>
+<li><a href="/401k-calculator/">401(k) Calculator</a></li>
+<li><a href="/roth-ira-calculator/">Roth IRA Calculator</a></li>
+</ul>
+<p class="disclaimer">Educational calculators, not investment advice. Results depend on your assumptions; past returns do not guarantee future results.</p>
+</div></main>
+<footer class="site"><div class="wrap">
+<p><a href="/compound-interest-calculator/">Compound Interest Calculator</a> <a href="/inflation-calculator/">Inflation Calculator</a> <a href="/investment-calculator/">Investment Calculator</a> <a href="/retirement-calculator/">Retirement Calculator</a> <a href="/401k-calculator/">401(k) Calculator</a> <a href="/roth-ira-calculator/">Roth IRA Calculator</a> <a href="/">All tools</a></p>
+<p><a href="/about/">About</a><a href="/methodology/">Methodology</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></p>
+<p>Educational calculators, not investment advice. Results depend on your assumptions; past returns do not guarantee future results.</p>
+<p>© <span id="y"></span> Fire Math Calc</p>
+</div></footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>

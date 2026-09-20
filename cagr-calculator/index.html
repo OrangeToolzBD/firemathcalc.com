@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CAGR Calculator: Compound Annual Growth Rate</title>
+<meta name="description" content="Calculate the compound annual growth rate between a starting and ending value over any number of years, with the formula explained.">
+<link rel="canonical" href="https://firemathcalc.com/cagr-calculator/">
+<meta property="og:title" content="CAGR Calculator: Compound Annual Growth Rate">
+<meta property="og:description" content="Calculate the compound annual growth rate between a starting and ending value over any number of years, with the formula explained.">
+<meta property="og:url" content="https://firemathcalc.com/cagr-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://firemathcalc.com/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://firemathcalc.com/assets/og-image.png">
+<link rel="stylesheet" href="/assets/site.css">
+<link rel="icon" type="image/png" href="/assets/favicon.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<style>:root{--brand:#047857;--font:Georgia, "Times New Roman", serif}</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://firemathcalc.com/#org","name":"Fire Math Calc","url":"https://firemathcalc.com/","description":"Fire Math Calc is a free set of early-retirement calculators that show the formula behind every result."},{"@type":"WebApplication","name":"CAGR Calculator","url":"https://firemathcalc.com/cagr-calculator/","description":"Calculate the compound annual growth rate between a starting and ending value over any number of years, with the formula explained.","applicationCategory":"FinanceApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@id":"https://firemathcalc.com/#org"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Fire Math Calc","item":"https://firemathcalc.com/"},{"@type":"ListItem","position":2,"name":"CAGR Calculator","item":"https://firemathcalc.com/cagr-calculator/"}]}]}</script>
+
+<script src="/assets/cpi-data.js" defer></script>
+<script src="/assets/calculator.js" defer></script>
+<script src="/assets/calc-core.js" defer></script>
+</head>
+<body>
+<header class="site"><div class="wrap"><a class="logo" href="/"><img src="/assets/logo.png" alt="Fire Math Calc" width="44" height="34"></a><nav class="site"><a href="/compound-interest-calculator/">Compound Interest</a><a href="/inflation-calculator/">Inflation</a><a href="/investment-calculator/">Investment</a><a href="/retirement-calculator/">Retirement</a></nav></div></header>
+<main><div class="wrap">
+<nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Fire Math Calc</a> › CAGR Calculator</nav>
+<h1>CAGR Calculator</h1>
+<p class="answer">This <strong>CAGR calculator</strong> finds the compound annual growth rate: the steady yearly rate that turns a starting value into an ending value over a set time. $10,000 that grows to $25,000 in 7 years has a CAGR of about 13.99%. The formula is (ending ÷ starting)^(1 ÷ years) − 1.</p>
+<p class="updated">Updated <time datetime="2026-09-20">September 20, 2026</time> · By <a href="/about/">Fire Math Calc</a></p>
+<div id="calculator" data-calc="cagr"><noscript>This tool needs JavaScript turned on.</noscript></div>
+<div class="ad-slot"><!-- Ad slot 1 (below the tool). Empty until the ad network is approved; reserve its height in CSS first. --></div>
+<h2>What is CAGR?</h2>
+<p>CAGR, or compound annual growth rate, is the single yearly growth rate that would take an investment from its starting value to its ending value if it grew at the same pace every year. It smooths out the ups and downs, so you can compare growth over different periods or between different investments on one scale.</p><p>For example, suppose $10,000 became $25,000 in 7 years. The total change is 150%. The CAGR of 13.99% is the constant yearly rate that produces the same result: $10,000 × 1.1399^7 ≈ $25,000.</p><p>The real path almost certainly went up and down. CAGR describes where you started and where you ended, not how bumpy the journey was.</p><p>CAGR is used for investment returns, and also for revenue, dividends, prices and anything else measured at two points in time. It works best when you have one starting value and one ending value, with no money added or removed in between. If you made regular deposits, the <a href="/investment-calculator/">investment calculator</a> is a better fit, because deposits would inflate the apparent growth rate.</p>
+<h2>How do you calculate CAGR?</h2>
+<p>Divide the ending value by the starting value, raise the result to the power of 1 divided by the number of years, then subtract 1: <strong>CAGR = (ending ÷ starting)^(1 ÷ years) − 1</strong>. Multiply by 100 for a percentage. In Excel or Google Sheets, the same formula is <strong>=(end/start)^(1/years)-1</strong>, with cell references in place of the words.</p><p>Worked example with the calculator’s defaults:</p><ol><li><strong>Ratio:</strong> $25,000 ÷ $10,000 = 2.5.</li><li><strong>Exponent:</strong> 1 ÷ 7 ≈ 0.142857.</li><li><strong>Power:</strong> 2.5^0.142857 ≈ 1.13985.</li><li><strong>Subtract 1:</strong> 0.13985, or <strong>13.99%</strong> a year.</li></ol><p>You can also solve it in reverse to find what rate a goal requires. To double your money in 5 years, you need 2^(1/5) − 1, about 14.87% a year. To see roughly how long a known rate takes to double money, the <a href="/rule-of-72-calculator/">rule of 72 calculator</a> gives a quick answer and the exact figure.</p><p>The calculator accepts fractional years, such as 3.5, and warns you if the starting value or years is zero.</p>
+<h2>CAGR vs average annual return</h2>
+<p>An average annual return adds up each year’s percentage and divides by the number of years. CAGR compounds them. The two can differ a lot when returns swing. CAGR shows what actually happened to your money, while a simple average can overstate it.</p><p>A simple example shows why. An investment rises 50% in year one and falls 50% in year two:</p><ul><li>The simple average return is 0%.</li><li>$100 became $150, then $75, so you lost money.</li><li>The CAGR is about −13.40% a year, which matches the real result.</li></ul><p>The bigger the year-to-year swings, the wider the gap between the two measures. When you compare long-term performance figures, check whether they are compound (annualized) or simple averages.</p><p>The same concern appears in retirement research. The 1998 Trinity study by Cooley, Hubbard and Walz (<a href="https://www.aaii.com/journal/199802/feature.pdf" rel="nofollow noopener"><em>AAII Journal</em>, February 1998</a>) notes that analysis using long-term average returns ignores short-term variation. That variation can change the outcome for someone making withdrawals.</p><p>For a simple return on a single investment, including income received, the <a href="/roi-calculator/">ROI calculator</a> gives both total and annualized figures.</p>
+<h2>Frequently asked questions</h2>
+<div class="faq">
+<details><summary>How do I calculate CAGR?</summary><p>Use (ending value ÷ starting value)^(1 ÷ number of years) − 1. For $10,000 growing to $25,000 over 7 years: 2.5^(1/7) − 1 ≈ 0.1399, or 13.99% a year. In a spreadsheet, =(B2/A2)^(1/C2)-1 does the same, with the start in A2, the end in B2 and the years in C2.</p></details>
+<details><summary>What does a 5-year CAGR mean?</summary><p>It is the steady yearly growth rate that would produce the change seen over five years. If something grew from $100 to $150 over five years, its 5-year CAGR is about 8.45%. It describes the start and end points, not the ups and downs in between.</p></details>
+<details><summary>What CAGR do you need to double in 5 years?</summary><p>About 14.87% a year, because 1.1487 raised to the fifth power is 2. The rule of 72 gives a close estimate: 72 ÷ 5 = 14.4%. Whether any investment can reach that rate is uncertain, so treat it as a target, not an expectation.</p></details>
+<details><summary>Is a CAGR of 7% considered good?</summary><p>It depends on what you compare it with, the risk taken and inflation over the same years. At 7% a value doubles in about 10.2 years and rises about 40% over 5 years. Compare it with a relevant benchmark and with inflation for the same period before judging it.</p></details>
+</div>
+<h2>Sources</h2>
+<ul class="sources">
+<li><a href="https://www.aaii.com/journal/199802/feature.pdf" rel="nofollow noopener">AAII Journal — Cooley, Hubbard and Walz, “Retirement Savings: Choosing a Withdrawal Rate That Is Sustainable,” February 1998</a></li>
+</ul>
+<h2>Related tools</h2>
+<ul>
+<li><a href="/compound-interest-calculator/">Compound Interest Calculator</a></li>
+<li><a href="/inflation-calculator/">Inflation Calculator</a></li>
+<li><a href="/investment-calculator/">Investment Calculator</a></li>
+<li><a href="/roi-calculator/">ROI Calculator</a></li>
+<li><a href="/rule-of-72-calculator/">Rule of 72 Calculator</a></li>
+<li><a href="/retirement-calculator/">Retirement Calculator</a></li>
+<li><a href="/401k-calculator/">401(k) Calculator</a></li>
+<li><a href="/roth-ira-calculator/">Roth IRA Calculator</a></li>
+</ul>
+<p class="disclaimer">Educational calculators, not investment advice. Results depend on your assumptions; past returns do not guarantee future results.</p>
+</div></main>
+<footer class="site"><div class="wrap">
+<p><a href="/compound-interest-calculator/">Compound Interest Calculator</a> <a href="/inflation-calculator/">Inflation Calculator</a> <a href="/investment-calculator/">Investment Calculator</a> <a href="/retirement-calculator/">Retirement Calculator</a> <a href="/401k-calculator/">401(k) Calculator</a> <a href="/roth-ira-calculator/">Roth IRA Calculator</a> <a href="/">All tools</a></p>
+<p><a href="/about/">About</a><a href="/methodology/">Methodology</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></p>
+<p>Educational calculators, not investment advice. Results depend on your assumptions; past returns do not guarantee future results.</p>
+<p>© <span id="y"></span> Fire Math Calc</p>
+</div></footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
